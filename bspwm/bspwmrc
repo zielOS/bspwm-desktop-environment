@@ -1,0 +1,146 @@
+#!/bin/bash
+#  ╔╗ ╔═╗╔═╗╦ ╦╔╦╗  - Ahsan041
+#  ╠╩╗╚═╗╠═╝║║║║║║  - https://github.com/zielOS/bspwm-desktop-environment
+#  ╚═╝╚═╝╩  ╚╩╝╩ ╩  - ahsanur041@proton.me
+
+
+#  ┬┌┬┐┌─┐┌─┐┬─┐┌┬┐┌─┐┌┐┌┌┬┐  ┬  ┬┌─┐┬─┐┬┌─┐┌┐ ┬  ┌─┐┌─┐
+#  ││││├─┘│ │├┬┘ │ ├─┤│││ │   └┐┌┘├─┤├┬┘│├─┤├┴┐│  ├┤ └─┐
+#  ┴┴ ┴┴  └─┘┴└─ ┴ ┴ ┴┘└┘ ┴    └┘ ┴ ┴┴└─┴┴ ┴└─┘┴─┘└─┘└─┘
+
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+export QT_QPA_PLATFORMTHEME=qt5ct
+export PATH=$PATH:$HOME/.config/bspwm/scripts
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:/usr/local/texlive/2023/bin/x86_64-linux
+export MANPATH=$MANPATH:/usr/local/texlive/2023/texmf-dist/doc/man
+export INFOPATH=$INFOPATH/usr/local/texlive/2023/texmf-dist/doc/infoexport
+
+processes=("bspc" "picom" "dunst" "eww" "gammastep" "polkit-gnome-authentication-agent-1" "thunar" "bspswallow" "xrandr" "sxhkd")
+
+for process in "${processes[@]}"; do
+if pidof -q "$process"; then
+  pkill -9 -x "$process" > /dev/null; sleep 0.1
+fi
+done
+
+pgrep -x sxhkd > /dev/null || sxhkd -c $HOME/.config/bspwm/sxhkdrc &
+
+
+#  ┬ ┬┌─┐┬─┐┬┌─┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐
+#  ││││ │├┬┘├┴┐└─┐├─┘├─┤│  ├┤ └─┐
+#  └┴┘└─┘┴└─┴ ┴└─┘┴  ┴ ┴└─┘└─┘└─┘
+
+workspaces() {
+	name=1
+	for monitor in $(bspc query -M); do
+		#bspc monitor "${monitor}" -n "$name" -d '1' '2' '3' '4' '5' '6'
+		bspc monitor ${monitor} -n "$name" -d '' '' '' '' '' ''
+		(( name++ ))
+	done
+}
+
+#  ┌┐ ┌─┐┌─┐┬ ┬┌┬┐  ┌─┐┌─┐┌┐┌┌─┐┬┌─┐
+#  ├┴┐└─┐├─┘││││││  │  │ ││││├┤ ││ ┬
+#  └─┘└─┘┴  └┴┘┴ ┴  └─┘└─┘┘└┘└  ┴└─┘
+
+bspc config external_rules_command $HOME/.config/bspwm/scripts/ExternalRules
+
+bspc config single_monocle           true
+bspc config borderless_monocle       false
+bspc config gapless_monocle          false
+bspc config automatic_scheme         alternate
+bspc config initial_polarity         second_child
+
+bspc config focus_follows_pointer    true
+bspc config pointer_follows_focus    false
+bspc config pointer_motion_interval  5
+bspc config pointer_modifier         mod4 
+bspc config pointer_action1          move 
+bspc config pointer_action2          resize_side 
+bspc config pointer_action3          resize_corner
+
+bspc config border_width             4
+bspc config window_gap               12
+bspc config split_ratio              0.50
+bspc config top_padding              3
+bspc config bottom_padding           2
+bspc config focused_border_color     "#B4BEFE"
+bspc config normal_border_color      "#11111B"
+bspc config active_border_color      "#11111B"
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+
+#  ┬  ┌─┐┬ ┬┌┐┌┌─┐┬ ┬┌─┐┬─┐
+#  │  ├─┤│ │││││  ├─┤├┤ ├┬┘
+#  ┴─┘┴ ┴└─┘┘└┘└─┘┴ ┴└─┘┴└─
+
+# Fix cursor
+xsetroot -cursor_name left_ptr &
+
+# Compositor
+picom --config $HOME/.config/picom/picom.conf &
+
+# Restore wallpaper
+feh -z --no-fehbg --bg-fill $HOME/.config/wallpapers/wallpaper.png
+
+# Restore display
+xrandr --output DP-0 --off --output DP-1 --off --output DP-0 --scale 0.9x0.9 --mode 2560x1440 --pos 0x0 --rotate normal --output DP-2 --scale 0.9x0.9 --primary --mode 3440x1440 --pos 2304x0 --rotate normal --output DP-4 --scale 0.9x0.9 --mode 2560x1440 --pos 5400x0 --rotate normal --output USB-C-0 --off &
+
+## Launch notification daemon
+dwmdunst &
+
+## Launch policykit
+/usr/libexec/polkit-gnome-authentication-agent-1 &
+
+xrdb merge ~/.Xresources & 
+
+## Setup theme
+xsettingsd --config=$HOME/.config/xsettingsd/xsettingsd &
+
+## Launch thunar daemon
+thunar --daemon &
+
+## Enable window swallowing
+pidof bspswallow | bspswallow &
+
+# Fix Java problems
+wmname "LG3D"
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+## Launch apps
+ckb-next &
+insync start &
+gammastep &
+gentoo-pipewire-launcher &
+
+# Launch the bar and or eww widgets
+launch_bars() {
+		eww -c $HOME/.config/bar open bar &
+		eww -c $HOME/.config/dashboard daemon &
+		polybar -q tray -c ${rice_dir}/bar/polybar_tray.ini &
+}
+
+THEME='Mocha-Mauve'
+ICONS='Papirus-Dark'
+FONT='JetBrainsMono Nerd Font 13'
+CURSOR='Qogir-Dark'
+
+SCHEMA='gsettings set org.gnome.desktop.interface'
+
+apply_themes () {
+	${SCHEMA} gtk-theme "$THEME" &
+	${SCHEMA} icon-theme "$ICONS" &
+	${SCHEMA} cursor-theme "$CURSOR" &
+	${SCHEMA} font-name "$FONT" &
+}
+
+apply_themes
+launch_bars

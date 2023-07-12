@@ -1,0 +1,32 @@
+#!/bin/bash
+
+infocenter(){
+FILE="$HOME/.cache/eww.dashboard"
+
+if [[ ! -f "$FILE" ]]; then
+	touch "$FILE"
+	eww --config $HOME/.config/eww/dashboard open dashboard
+else
+	eww --config $HOME/.config/eww/dashboard close dashboard
+	rm "$FILE"
+fi
+}
+
+calendar(){
+LOCK_FILE="$HOME/.cache/eww-calendar.lock"
+
+if [[ ! -f "$LOCK_FILE" ]]; then
+    touch "$LOCK_FILE"
+    eww -c $HOME/.config/eww/bar open calendar
+else
+    eww -c $HOME/.config/eww/bar close calendar
+    rm "$LOCK_FILE"
+fi
+}
+
+case "$1" in
+  --infocenter)
+	infocenter;;
+  --calendar)
+	calendar;;
+esac
