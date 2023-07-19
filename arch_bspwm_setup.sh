@@ -43,5 +43,5 @@ cd && sudo systemctl enable --now snapd.socket && sudo ln -s /var/lib/snapd/snap
 
 
 echo "Setting up dotfiles0"
-cd && cd arch-hyprland-DE 
+cd && cd arch-bspwm-DE 
 stow .
