@@ -1,0 +1,1442 @@
+1689544571063	Sync.Status	INFO	Resetting Status.
+1689544571063	Sync.Status	DEBUG	Status.service: undefined => success.status_ok
+1689544571064	FirefoxAccounts	TRACE	initializing new storage manager
+1689544571064	FirefoxAccounts	TRACE	starting fetch of json user data
+1689544571064	Sync.SyncScheduler	TRACE	Setting SyncScheduler policy values to defaults.
+1689544571064	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1689544571064	Sync.Service	INFO	Loading Weave 1.117.0
+1689544571064	Sync.Engine.Clients	DEBUG	Engine constructed
+1689544571064	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1689544571065	Sync.Engine.Addons	DEBUG	Engine constructed
+1689544571065	FirefoxAccounts	TRACE	finished fetch of json user data - took: 1
+1689544571065	FirefoxAccounts	DEBUG	reading secure storage with existing: []
+1689544571065	FirefoxAccounts	TRACE	starting fetch of user data from the login manager
+1689544571066	FirefoxAccounts	DEBUG	secure read fetched items: ["scopedKeys","kSync","kXCS","kExtSync","kExtKbHash"]
+1689544571066	FirefoxAccounts	TRACE	initializing of new storage manager done
+1689544571067	Sync.Engine.Addons	DEBUG	SyncEngine initialized: addons
+1689544571067	Sync.Engine.Passwords	DEBUG	Engine constructed
+1689544571069	Sync.Engine.Passwords	DEBUG	SyncEngine initialized: passwords
+1689544571069	Sync.Engine.Prefs	DEBUG	Engine constructed
+1689544571071	Sync.Engine.Prefs	DEBUG	SyncEngine initialized: prefs
+1689544571072	Sync.Engine.Bookmarks	DEBUG	Engine constructed
+1689544571072	FirefoxAccounts	DEBUG	FxAccountsWebChannel registered: account_updates with origin https://accounts.firefox.com
+1689544571072	Sync.Engine.Bookmarks	DEBUG	SyncEngine initialized: bookmarks
+1689544571073	Sync.Engine.Forms	DEBUG	Engine constructed
+1689544571073	Sync.Engine.Forms	DEBUG	SyncEngine initialized: forms
+1689544571074	Sync.Engine.History	DEBUG	Engine constructed
+1689544571075	Sync.Engine.History	DEBUG	SyncEngine initialized: history
+1689544571075	Sync.Engine.Tabs	DEBUG	Engine constructed
+1689544571076	Sync.Engine.Tabs	DEBUG	SyncEngine initialized: tabs
+1689544571079	Sync.Engine.Tabs	INFO	Got a bridged engine!
+1689544571079	Sync.Engine.Addresses	DEBUG	Engine constructed
+1689544571080	Sync.Engine.Addresses	DEBUG	SyncEngine initialized: addresses
+1689544571080	Sync.Engine.CreditCards	DEBUG	Engine constructed
+1689544571080	Sync.Engine.CreditCards	DEBUG	SyncEngine initialized: creditcards
+1689544571080	Sync.Engine.Extension-Storage	DEBUG	Engine constructed
+1689544571081	Sync.Engine.Extension-Storage	DEBUG	SyncEngine initialized: extension-storage
+1689544571081	Sync.Service	INFO	Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+1689544571081	Sync.AddonsReconciler	INFO	Registering as Add-on Manager listener.
+1689544571081	Sync.AddonsReconciler	DEBUG	Adding change listener.
+1689544571081	Sync.Engine.History.Tracker	INFO	Adding Places observer.
+1689544571083	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Initialized
+1689544571083	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1689544571083	FirefoxAccounts	DEBUG	getOAuthToken enter
+1689544571083	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1689544571083	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1689544571083	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1689544571088	FirefoxAccounts	INFO	fetching updated device list
+1689544571089	Sync.Service	DEBUG	User-Agent: Firefox/115.0.2 (Linux x86_64) FxSync/1.117.0.20230715101035.desktop
+1689544571089	Sync.Service	INFO	Starting sync at 2023-07-16 15:56:11 in browser session 16s7M7UT-WWz
+1689544571089	Sync.Service	DEBUG	In sync: should login.
+1689544571090	Sync.Service	INFO	User logged in successfully - verifying login.
+1689544571090	Sync.SyncAuthManager	DEBUG	unlockAndVerifyAuthState already has (or can fetch) sync keys
+1689544571090	Sync.Status	DEBUG	Status.login: success.login => success.status_ok
+1689544571090	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1689544571090	Sync.Service	DEBUG	Fetching unlocked auth state returned success.status_ok
+1689544571090	Sync.SyncAuthManager	INFO	Getting sync key
+1689544571090	Sync.SyncAuthManager	INFO	Getting a sync token from: https://token.services.mozilla.com/1.0/sync/1.5
+1689544571090	Sync.SyncAuthManager	DEBUG	Getting a token using OAuth
+1689544571090	FirefoxAccounts	DEBUG	getOAuthToken enter
+1689544571090	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1689544571090	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1689544571090	Services.Common.TokenServerClient	DEBUG	Beginning OAuth token exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1689544571090	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1689544571095	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/devices?filterIdleDevicesTimestamp=1687730171088
+1689544571123	FirefoxAccounts	INFO	Already fetching device list, return existing promise
+1689544571189	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 200
+1689544571189	Services.Common.TokenServerClient	DEBUG	Got token response: 200
+1689544571189	Services.Common.TokenServerClient	DEBUG	Successful token response
+1689544571189	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1689544571189	Sync.Status	DEBUG	Status.login: success.status_ok => success.login
+1689544571189	Sync.Status	DEBUG	Status.service: error.login.failed => success.status_ok
+1689544571190	Sync.SyncAuthManager	DEBUG	_findCluster returning https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/
+1689544571190	Sync.SyncAuthManager	DEBUG	Cluster value = https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/
+1689544571190	Sync.SyncAuthManager	DEBUG	Setting cluster to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/
+1689544571190	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/
+1689544571190	FirefoxAccounts	INFO	Already fetching device list, return existing promise
+1689544571266	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1689544571306	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/info/collections
+1689544571306	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/info/configuration
+1689544571306	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544571314	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/devices?filterIdleDevicesTimestamp=1687730171088 200
+1689544571314	Hawk	DEBUG	(Response) /account/devices?filterIdleDevicesTimestamp=1687730171088: code: 200 - Status text: OK
+1689544571314	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -314
+1689544571314	FirefoxAccounts	INFO	Got new device list: 1bf5e08becd172ad93c916e49b1c3c11, 1ee9e430ac1f379ad12db2f940ed7b33, 31892bf437e844d1d4159cbf5b8b2ffa, 41e0571519fe5a4de6303267c95b6b9f, 423cc04944230444948266de6aa1914c, 733465b8993d34255573201efa3f0b56, 7a9afaf6766017b9bfa12139cb1f0da5
+1689544571314	FirefoxAccounts	DEBUG	FxAccountsPush loading service
+1689544571314	FirefoxAccounts	DEBUG	FxAccountsPush initialized
+1689544571315	FirefoxAccounts	TRACE	Our push subscription looks OK
+1689544571315	FirefoxAccounts	INFO	updating the cache
+1689544571341	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/info/configuration
+1689544571341	Sync.Service	DEBUG	Fetching global metadata record
+1689544571341	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544571399	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/meta/global
+1689544571399	Sync.Service	DEBUG	Clearing cached meta record. metaModified is undefined, setting to 1678877250.64
+1689544571399	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544571456	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/meta/global
+1689544571457	Sync.Service	DEBUG	Weave Version: 1.117.0 Local Storage: 5 Remote Storage: 5
+1689544571457	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1689544571457	Sync.Service	INFO	Testing info/collections: {"crypto":1541661466.88,"creditcards":1689543075.63,"addons":1689544429.03,"forms":1689520159.52,"prefs":1689540304.63,"meta":1678877250.64,"tabs":1689544462.55,"clients":1689544457.74,"history":1689543866.15,"bookmarks":1689543067.99,"extension-storage":1689543175.4,"passwords":1689540305}
+1689544571457	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 0
+1689544571457	Sync.Service	INFO	collection keys reports that a key update is needed.
+1689544571457	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544571510	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1689544571522	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/crypto/keys
+1689544571522	Sync.CollectionKeyManager	INFO	Updating collection keys...
+1689544571523	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1541661466.88.
+1689544571523	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1689544571523	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1689544571523	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1689544571523	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1689544571523	Sync.CollectionKeyManager	INFO	Bumping last modified to 1541661466.88
+1689544571523	Sync.CollectionKeyManager	INFO	Collection keys updated.
+1689544571523	Sync.Status	DEBUG	Status.login: success.login => success.login
+1689544571523	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1689544571523	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/
+1689544571523	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1689544571523	Sync.Status	INFO	Resetting Status.
+1689544571523	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1689544571524	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544571585	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/info/collections
+1689544571585	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/info/configuration
+1689544571585	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544571620	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/info/configuration
+1689544571620	Sync.Service	DEBUG	Fetching global metadata record
+1689544571620	Sync.Service	DEBUG	Weave Version: 1.117.0 Local Storage: 5 Remote Storage: 5
+1689544571620	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1689544571620	Sync.Service	INFO	Testing info/collections: {"bookmarks":1689543067.99,"prefs":1689540304.63,"clients":1689544457.74,"meta":1678877250.64,"creditcards":1689543075.63,"addons":1689544429.03,"history":1689543866.15,"passwords":1689540305,"forms":1689520159.52,"tabs":1689544462.55,"extension-storage":1689543175.4,"crypto":1541661466.88}
+1689544571620	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1541661466.88
+1689544571620	Sync.Synchronizer	DEBUG	Refreshing client list.
+1689544571620	Sync.Engine.Clients	DEBUG	First sync, uploading all items
+1689544571620	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1689544571620	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544571741	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/clients?full=1&limit=1000
+1689544571844	Sync.Engine.Clients	INFO	Records: 158 applied, 158 successfully, 0 failed to apply, 0 newly failed to apply, 1 reconciled.
+1689544571844	FirefoxAccounts	INFO	Device list cache is fresh, re-using it
+1689544571844	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client v6S8ibVlfyBi - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 0-w2FgREtYg4 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 0-w2FgREtYg4 with age 971214.1900000572
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client EPwPRawv_427 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client EPwPRawv_427 with age 1003344.1500000954
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client XK9DBRBdOVm0 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client XK9DBRBdOVm0 with age 1373842.0600001812
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client MU9yycBUgKG_ - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client FSNs5ELCsCkd with age 1383270.1500000954
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client Iu50m1t-rpSi - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client Iu50m1t-rpSi with age 1878458.1900000572
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client y2kFcTOfjxnn - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client yX6-4N0XjHYb - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client S9H2e5O88pfw - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client S9H2e5O88pfw with age 2672623.8600001335
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client tKXsXPyzX3Qm - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client NAD3Tyu8lRh4 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 7GqK1Nom3DUq - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 7GqK1Nom3DUq with age 2734265.5099999905
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client qC9_YJ_WYdQp - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client qC9_YJ_WYdQp with age 2743296.1300001144
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client -zdD9f0muWp5 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client -zdD9f0muWp5 with age 2752142.039999962
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 8yDTG7p_maSp - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 8yDTG7p_maSp with age 3138531.2599999905
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client CoN8Y_DWgSUa - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client CoN8Y_DWgSUa with age 3339740.7599999905
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client GzJNuC_oheU3 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client GzJNuC_oheU3 with age 3377710.769999981
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client W5ilJJ6GyI8r - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client W5ilJJ6GyI8r with age 3496031.0900001526
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client ge-9EdGXHTXk - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client a7mNBQ8Pb1Av - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client RSA-7upD9tro - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client RSA-7upD9tro with age 3717388.4300000668
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 7eGcm9Irg2z1 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 7eGcm9Irg2z1 with age 3723894.810000181
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client ZcTJBI9-zXVE - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client N5zWMAva68oz - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client N5zWMAva68oz with age 3758656.310000181
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client OONWX0xJP8lv - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client OONWX0xJP8lv with age 3809579.3400001526
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client laxzEg7DfRfl - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client laxzEg7DfRfl with age 4047580.769999981
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 7IMVJQY4fF17 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client rjBklF5S0B2m - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client rjBklF5S0B2m with age 4168519.269999981
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client gDYZo_LEn18U - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client gDYZo_LEn18U with age 4231291.920000076
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client niDqkbZ6ENqK - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client niDqkbZ6ENqK with age 4541550.130000114
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client fVLXg0QwfjwJ - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client fVLXg0QwfjwJ with age 4545054.960000038
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client OyQovTe36lzc - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client OyQovTe36lzc with age 4628516.519999981
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client oUTkJpA_tBvg - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client _Jr7_T_f6PiD - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client _Jr7_T_f6PiD with age 4813728.900000095
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client ICKkfmtg5SxA - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client ICKkfmtg5SxA with age 4816603.090000153
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client JU_4KnKsyiYa - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client JU_4KnKsyiYa with age 4901186.930000067
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client K6r5oJYTZGFp - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client K6r5oJYTZGFp with age 4913224.370000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client yeRPAjR7DNIO - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client yeRPAjR7DNIO with age 4998396.950000048
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client BYFYCTBJ5jh5 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client BYFYCTBJ5jh5 with age 5092909.3600001335
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client ZR7gg-P9zv2H - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client uJ4e9LeoyjDL - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client uJ4e9LeoyjDL with age 5179043.390000105
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client j4Mg3L8fVc-r - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client j4Mg3L8fVc-r with age 5298271.269999981
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client -BsF7gwrspzw - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client -BsF7gwrspzw with age 5317295.430000067
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 6MMPeH4yThSy - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 6MMPeH4yThSy with age 5384547.800000191
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client LoB9dwcYUOx4 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client I4rpJ7PJssnE - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client I4rpJ7PJssnE with age 5476396.980000019
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client N62_Akt2jO2Z - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client N62_Akt2jO2Z with age 5516423.410000086
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 4e4e12dc3e61167e4105e8fd6c0a8e33 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client qbtZzUoTP7G6 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client qbtZzUoTP7G6 with age 6181759.24000001
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client --T9U73p6UlC - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client -9ecFBouKg0b - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client -9ecFBouKg0b with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client -BY5GvHx_NbU - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 0-qdFB-ZlXJ1 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 04hkVVB6uPJM - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 04hkVVB6uPJM with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 0EkyoiBAZ4WN - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 0EkyoiBAZ4WN with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 0wXDYc8OPMeY - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 0wXDYc8OPMeY with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 0z_kXrvJIHiY - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 10xv4BtVh_xs - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 1KzGaAqdM8iD - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 1VWd8fSa9b6t - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 1VWd8fSa9b6t with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 1e5a187ccd5d - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 272560c7ae9e - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 2lzqawmCr9vq - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 4e92617270fa - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 60d0e32c76e0 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 60d0e32c76e0 with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 6K9GTWBE_PPf - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 6K9GTWBE_PPf with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 7ce12319d916 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 7ce12319d916 with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 8kg2H9S-Jwd5 - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 8kg2H9S-Jwd5 with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 98c11ead4a9d - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 98c11ead4a9d with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 9L8SCT5BpTNe - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 9L8SCT5BpTNe with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 9Vzzdpb5hAdX - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 9Vzzdpb5hAdX with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 9yAaPjfLOioe - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client 9yAaPjfLOioe with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client AgjjwCiiYWyG - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client AgjjwCiiYWyG with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client AqPIixzS3DtN - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client BJd72eZ5RWQg - in known stale clients list
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client BJd72eZ5RWQg with age 6366509.120000124
+1689544571844	Sync.Engine.Clients	INFO	Hiding stale client BPT_WG0nuLhz - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client D4Octtzur8sQ - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client DE61XlhxVk1f - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client E7MLqorYAghI - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client E7MLqorYAghI with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client FP3dC4N4sgzV - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client FP3dC4N4sgzV with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client FZp2OSGS1hSF - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client FZp2OSGS1hSF with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client Gh2eEWGv24QS - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client Gh2eEWGv24QS with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client HHOiId8IyG6T - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client HHOiId8IyG6T with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client HVH81s5DonF9 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client HVH81s5DonF9 with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client I_OhjNT-uqCH - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client I_OhjNT-uqCH with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client KDYFblsoAxZ1 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client KDYFblsoAxZ1 with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client Kj_t2z4JFX51 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client Kj_t2z4JFX51 with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client LDoZWmijtu_3 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client LDoZWmijtu_3 with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client NssGxUQG_H4B - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client NssGxUQG_H4B with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client OgVJMPCL-LAH - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client OgVJMPCL-LAH with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client OxlnOhdvF3P_ - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client OxlnOhdvF3P_ with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client PRKmAbBbViTE - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client PRKmAbBbViTE with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client QJlMaZHUiANR - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client QJlMaZHUiANR with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client QYU5a6_vVsN1 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client QYU5a6_vVsN1 with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client RBfCTcOjzKpZ - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client RBfCTcOjzKpZ with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client RPWubuUIAED5 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client RPWubuUIAED5 with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client UICWyPb_xLZV - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client UICWyPb_xLZV with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client UITd5DbFQEZJ - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client UITd5DbFQEZJ with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client VJZZnF8BW_0W - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client VJZZnF8BW_0W with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client Vg3hfgF-N4H5 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client Vg3hfgF-N4H5 with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client WT_MTehWbp-P - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client WT_MTehWbp-P with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client YE-zkAl_fIVc - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client YE-zkAl_fIVc with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client ZgyWx421DOai - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client ZgyWx421DOai with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client _-Cqh950ucQI - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client _-Cqh950ucQI with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client _LXDYQJq6a8o - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client _LXDYQJq6a8o with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client _cHwpajOWNXv - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client aCgvvUqvwTeE - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client aCgvvUqvwTeE with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client cJwNxLhP8TtR - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client cu7tpKSpCm1e - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client cvFqo0dlxWWF - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client cvFqo0dlxWWF with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client cxtVFeLXSsrD - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client cxtVFeLXSsrD with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client d3a99de9ae34 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client d3a99de9ae34 with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client e26Jzc0uQeMc - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client e26Jzc0uQeMc with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client eMEiqPEXHK1b - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client eMEiqPEXHK1b with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client f8litMe5NK0F - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client fJ3iEFuLFEUc - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client fJ3iEFuLFEUc with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client fJbBC7PMLoVb - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client fJbBC7PMLoVb with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client fRgHR3hVtKJg - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client fRgHR3hVtKJg with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client gi0X-ZiUk64q - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client gi0X-ZiUk64q with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client hYnbDBjSQBr- - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client hYnbDBjSQBr- with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client hzrVRwtgSyd9 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client hzrVRwtgSyd9 with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client iywsGZ5wrNd- - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client iywsGZ5wrNd- with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client j4KtzhzswSSZ - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client j4KtzhzswSSZ with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client jGnBykz_M_hS - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client jgzKOUuN5FOP - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client jgzKOUuN5FOP with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client jrPAokQABAkd - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client jrPAokQABAkd with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client jyEIURVYMMAE - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client k-xJcQx06DyP - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client knSvFiwAI6bI - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client knSvFiwAI6bI with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client lJ3_YwdHxsDo - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client lJ3_YwdHxsDo with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client lmAJ1qhsdZb6 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client mCBNUxsn4sYk - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client mCBNUxsn4sYk with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client mp1vU7PWF0yA - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client mp1vU7PWF0yA with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client ndqNrd3nUn8h - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client ndqNrd3nUn8h with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client oYE0IQU8P1Xn - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client oYE0IQU8P1Xn with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client pLsR6fk8pASy - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client pLsR6fk8pASy with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client qONwJxFisX8v - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client qONwJxFisX8v with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client qWDiGLDaoVF2 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client qWDiGLDaoVF2 with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client qXQD_eC9NVqM - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client qXQD_eC9NVqM with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client s-Da6L6f_o0S - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client s-Da6L6f_o0S with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client sF2bxT_ha_nj - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client sF2bxT_ha_nj with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client t0pA3nSHgoVW - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client t0pA3nSHgoVW with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client tVWFZgzO_iNX - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client tVWFZgzO_iNX with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client tkC_95G6kCkt - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client tkC_95G6kCkt with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client uL-2fPFTTch7 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client uL-2fPFTTch7 with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client uL68MLYSl6mO - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client uL68MLYSl6mO with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client uYo56yGPT2v5 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client uYo56yGPT2v5 with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client wcXMpY5hxRON - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client wcXMpY5hxRON with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client wr4ejRGMQ2rk - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client wr4ejRGMQ2rk with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client xErccWX0sU50 - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client xErccWX0sU50 with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client yjaeSnu6rdrK - in known stale clients list
+1689544571845	Sync.Engine.Clients	INFO	Hiding stale client yjaeSnu6rdrK with age 6366509.120000124
+1689544571845	Sync.Engine.Clients	INFO	Uploading 1 outgoing records
+1689544571845	Sync.Engine.Clients	INFO	Posting 1 records of 530 bytes with batch=true
+1689544571845	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544571845	Sync.Collection	DEBUG	POST Length: 530
+1689544571942	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/clients?batch=true&commit=true
+1689544571958	Sync.SyncScheduler	DEBUG	Client count: 0 -> 7
+1689544571958	Sync.Synchronizer	INFO	Updating enabled engines: 7 clients.
+1689544571959	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1689544571960	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1689544571960	Sync.Engine.Prefs	INFO	Uploading 0 outgoing records
+1689544571963	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1689544571963	Sync.Engine.Passwords	INFO	Uploading 0 outgoing records
+1689544571998	Sync.Engine.Tabs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1689544571998	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1689544572004	Sync.Engine.Tabs	INFO	Posting 1 records of 811 bytes with batch=true
+1689544572004	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544572004	Sync.Collection	DEBUG	POST Length: 811
+1689544572103	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/tabs?batch=true&commit=true
+1689544572108	Sync.Engine.Bookmarks	DEBUG	Checking if server sync ID Y5xFlzjsiwNp matches existing
+1689544572118	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1689544572118	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust
+1689544572120	Sync.Engine.Bookmarks.Mirror	DEBUG	Building local tree
+1689544572122	Sync.Engine.Bookmarks.Mirror	DEBUG	Building remote tree
+1689544572125	Sync.Engine.Bookmarks.Mirror	DEBUG	Building merged tree
+1689544572125	Sync.Engine.Bookmarks.Mirror	DEBUG	Applying merged tree
+1689544572125	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust took 6.923ms
+1689544572125	Sync.Engine.Bookmarks.Mirror	DEBUG	No changes detected in both mirror and Places
+1689544572125	Sync.Engine.Bookmarks	INFO	Uploading 0 outgoing records
+1689544572125	Sync.Engine.Bookmarks.BookmarkSyncUtils	DEBUG	pushChanges: Processed change records: {"weak":0,"skipped":0,"updated":0}
+1689544572126	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1689544572126	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon System theme — auto (version=1.3, id=default-theme@mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Form Autofill (version=1.0.1, id=formautofill@mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Add-ons Search Detection (version=2.0.0, id=addons-search-detection@mozilla.com)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Picture-In-Picture (version=1.0.0, id=pictureinpicture@mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Screenshots (version=39.0.1, id=screenshots@mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Google (version=1.4, id=google@search.mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon WebCompat Reporter (version=1.5.1, id=webcompat-reporter@mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Web Compatibility Interventions (version=115.0.0, id=webcompat@mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Wikipedia (en) (version=1.3, id=wikipedia@search.mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Bing (version=1.5, id=bing@search.mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Amazon.co.uk (version=1.12, id=amazon@search.mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DuckDuckGo (version=1.4, id=ddg@search.mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon eBay (version=1.4, id=ebay@search.mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Light (version=1.2, id=firefox-compact-light@mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dark (version=1.2, id=firefox-compact-dark@mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Alpenglow (version=1.4, id=firefox-alpenglow@mozilla.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon purple dark theme (version=1.0, id={c68eb250-a25c-4433-b47c-2973582a0323})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Plane (version=2.0, id={934b4e10-6006-4aad-b494-add3eb9ed1b9})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Sweet-Dark (version=4.0, id={59f619c8-220b-4a27-8918-bf1537bc060a})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Tree Style Tab (version=3.9.15, id=treestyletab@piro.sakura.ne.jp)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Fluent (version=2.0, id={9793e1a3-e955-47d0-a76e-b2a1524f3a2f})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon One Dark Pro (version=1.0.1, id={7dbced10-8d99-4224-a31b-187777aefe0e})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon blues (version=1.0, id={915b37f4-4ba9-45fb-917b-1bf08c5da6f2})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dracula (version=1.0, id={459bde45-7b6f-481c-bd79-6ffe967c9fc4})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Darius CH 2.0v (version=1.0, id={19dfc2ab-9af0-47e7-883c-60205096ac59})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Safari Adapt Dark (version=2019.1102, id={1521991f-a057-4dd6-8c35-7ea47bd41562})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Matte Black (Red) (version=2022.2.23, id={a7589411-c5f6-41cf-8bdc-f66527d9d930})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Tokyo Night (version=1.0, id={afda92c3-008d-4d08-8766-3f1571995071})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon simple solid teal time (version=1.0, id={46fae9ec-7af9-45c3-acb2-5880d05aede6})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon CanvasBlocker (version=1.9, id=CanvasBlocker@kkapsner.de)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Spiritfarer - Night (version=1.0, id={ff7bbeb2-18d9-489f-a7aa-41d66cb13245})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Enhanced GitHub (version=5.0.11, id={72bd91c9-3dc5-40a8-9b10-dec633c0873f})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Turquoise small neon Fox V2 (version=1.0, id={ebf61f67-d063-4ce8-a57a-b84a30ed2b2a})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Purple Night (version=1.0, id={4634d9ed-e1f8-4a04-81ee-9425b66e1642})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Catppuccin Mocha - Blue (version=2.0, id={2adf0361-e6d8-4b74-b3bc-3f450e8ebb69})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon BetterDracula (version=1.0, id={2f51855f-5b7f-42f8-83f6-fa3ecacdf08e})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Catppuccin Mocha - Mauve (version=2.0, id={76aabc99-c1a8-4c1e-832b-d4f2941d5a7a})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon LastPass: Free Password Manager (version=4.116.0.2, id=support@lastpass.com)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Fluent (version=2.0, id={11554e2c-a463-49b4-83b8-99c14c4358a1})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dark space - The best dynamic theme (version=1.1.1, id={22b0eca1-8c02-4c0d-a5d7-6604ddd9836e})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Plane dark (version=5.0, id={e2a89287-a816-474e-bf1c-c2e749485e03})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Fluent design (version=1.0, id={0a78d823-6184-4824-9751-403997949b32})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dark-ish Rainbow (version=1.0, id={21f69c5d-b9e1-470f-a890-74454e954eee})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon uBlock Origin (version=1.50.0, id=uBlock0@raymondhill.net)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon JSON Lite (version=21.3.0, id={16a49f65-1369-4839-a5ef-db2581e08b16})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dark Reader (version=4.9.64, id=addon@darkreader.org)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DarkTheme (version=4.3, id={99c277af-d778-4a0b-9faa-b1d8165f0a55})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Science Fiction Florest (version=1.0, id={4d6138be-7d98-4fed-8cb9-277c3a351183})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Gamer TIme (version=1.8, id={3afd3680-7dda-4412-be2c-1494d8162531})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon gray leaf (version=2.0, id={979aae3a-31db-479d-b7d5-95054b5a33ff})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Forest theme by grishiv (version=1.0, id={ff3765dd-650e-4b21-bb5a-db0b3fa9b81d})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon draculatheme (version=1.1.3, id={c5c09398-95d8-46b6-a2e8-9be4772929f8})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Minimalist Tokyo Night (version=1.2, id={cedc85c2-a129-407d-babe-f1ff71723513})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon One Dark (version=1.0, id={608b1b71-54d9-4606-87b6-ab2c8b48e708})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dracula Dark Theme (version=1.9.4, id={b743f56d-1cc1-4048-8ba6-f9c2ab7aa54d})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Blue Carbon Fiber (version=2.0, id={5ab03bdd-3d91-4c73-801e-607ca27458d0})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Eges Black and purple (version=1.0, id={13a413ce-69fa-4239-8169-7697dcbbec41})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon GNOME Dark (version=1.0, id={aec77dcc-cbdb-4dac-9a4f-8c6192040aab})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dracula (version=1.0, id={7c7f5097-d453-4951-8638-d1055726a76b})
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon OpenH264 Video Codec provided by Cisco Systems, Inc. (version=2.3.2, id=gmp-gmpopenh264)
+1689544572126	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Widevine Content Decryption Module provided by Google Inc. (version=4.10.2557.0, id=gmp-widevinecdm)
+1689544572127	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1689544572127	Sync.Engine.Addons	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1689544572127	Sync.Engine.Addons	INFO	Uploading 0 outgoing records
+1689544572128	Sync.Engine.Addresses	DEBUG	First sync, uploading all items
+1689544572128	Sync.Engine.Addresses	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1689544572128	Sync.Engine.Addresses	INFO	Uploading 0 outgoing records
+1689544572128	Sync.Engine.CreditCards	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1689544572128	Sync.Engine.CreditCards	INFO	Uploading 0 outgoing records
+1689544572128	Sync.Engine.Forms	DEBUG	First sync, uploading all items
+1689544572130	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544572249	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000
+1689544572251	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544572380	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=1000
+1689544572383	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544572479	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=2000
+1689544572480	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544572600	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=3000
+1689544572603	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544572693	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=4000
+1689544572695	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544572817	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=5000
+1689544572818	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544572953	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=6000
+1689544572955	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544573055	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=7000
+1689544573058	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544573189	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=8000
+1689544573192	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544573319	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=9000
+1689544573321	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544573425	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=10000
+1689544573427	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544573557	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=11000
+1689544573559	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544573705	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=12000
+1689544573709	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544573814	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=13000
+1689544573815	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544573956	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=14000
+1689544573957	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544574071	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=15000
+1689544574073	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544574198	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=16000
+1689544574213	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544574328	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=17000
+1689544574329	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544574470	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=18000
+1689544574471	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544574614	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=19000
+1689544574615	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544574727	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=20000
+1689544574728	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544574850	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=21000
+1689544574855	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544575010	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=22000
+1689544575012	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544575163	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=23000
+1689544575165	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544575308	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=24000
+1689544575309	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544575458	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=25000
+1689544575460	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544575616	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=26000
+1689544575618	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544575772	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=27000
+1689544575773	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544575926	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=28000
+1689544575931	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544576095	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=29000
+1689544576108	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544576228	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=30000
+1689544576234	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544576405	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=31000
+1689544576406	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544576531	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=32000
+1689544576535	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544576536	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1689544576537	Sync.Engine.Tabs	INFO	Posting 1 records of 811 bytes with batch=true
+1689544576537	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544576538	Sync.Collection	DEBUG	POST Length: 811
+1689544576624	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/tabs?batch=true&commit=true
+1689544576628	Sync.Telemetry	INFO	Notification for engine tabs but it isn't current
+1689544576704	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=33000
+1689544576705	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544576863	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=34000
+1689544576865	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544577024	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=35000
+1689544577026	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544577164	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=36000
+1689544577165	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544577324	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=37000
+1689544577325	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544577454	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=38000
+1689544577456	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544577642	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=39000
+1689544577643	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544577783	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=40000
+1689544577784	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544577930	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=41000
+1689544577932	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544578088	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=42000
+1689544578089	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544578283	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=43000
+1689544578285	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544578431	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=44000
+1689544578432	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544578589	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=45000
+1689544578591	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544578738	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=46000
+1689544578740	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544578936	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=47000
+1689544578942	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544579111	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=48000
+1689544579112	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544579294	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=49000
+1689544579295	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544579466	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=50000
+1689544579468	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544579617	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=51000
+1689544579618	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544579833	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=52000
+1689544579834	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544579986	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=53000
+1689544579987	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544580138	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=54000
+1689544580139	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544580315	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=55000
+1689544580316	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544580488	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=56000
+1689544580489	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544580646	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=57000
+1689544580647	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544580836	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=58000
+1689544580837	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544581022	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=59000
+1689544581023	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544581199	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=60000
+1689544581201	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544581379	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=61000
+1689544581381	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544581546	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=62000
+1689544581551	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544581709	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=63000
+1689544581710	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544581891	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=64000
+1689544581897	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544582094	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=65000
+1689544582096	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544582257	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=66000
+1689544582258	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544582443	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=67000
+1689544582444	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544582638	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=68000
+1689544582639	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544582811	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=69000
+1689544582813	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544582992	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=70000
+1689544582995	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544583172	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=71000
+1689544583173	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544583364	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=72000
+1689544583365	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544583566	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=73000
+1689544583567	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544583727	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=74000
+1689544583728	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544583922	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=75000
+1689544583923	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544584130	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=76000
+1689544584131	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544584302	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=77000
+1689544584304	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544584488	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=78000
+1689544584489	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544584692	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=79000
+1689544584693	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544584919	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=80000
+1689544584920	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544585096	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=81000
+1689544585101	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544585335	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=82000
+1689544585336	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544585566	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=83000
+1689544585567	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544585755	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=84000
+1689544585756	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544585973	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=85000
+1689544585974	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544586186	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=86000
+1689544586187	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544586374	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=87000
+1689544586379	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544586573	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=88000
+1689544586576	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544586790	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=89000
+1689544586791	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544587013	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=90000
+1689544587015	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544587208	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=91000
+1689544587209	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544587408	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=92000
+1689544587409	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544587600	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=93000
+1689544587602	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544587800	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=94000
+1689544587801	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544588035	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=95000
+1689544588036	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544588250	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=96000
+1689544588251	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544588511	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=97000
+1689544588513	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544588753	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=98000
+1689544588754	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544588947	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=99000
+1689544588948	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544589148	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=100000
+1689544589150	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544589382	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=101000
+1689544589384	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544589599	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=102000
+1689544589600	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544589855	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=103000
+1689544589857	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544590119	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=104000
+1689544590121	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544590358	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=105000
+1689544590361	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544590560	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=106000
+1689544590561	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544590801	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=107000
+1689544590802	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544591061	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=108000
+1689544591062	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544591350	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=109000
+1689544591351	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544591554	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=110000
+1689544591556	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544591817	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=111000
+1689544591818	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544592080	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=112000
+1689544592082	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544592330	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=113000
+1689544592331	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544592599	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=114000
+1689544592600	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544592873	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=115000
+1689544592874	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544593109	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=116000
+1689544593111	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544593438	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=117000
+1689544593440	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544593726	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=118000
+1689544593727	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544594011	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=119000
+1689544594013	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544594315	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=120000
+1689544594317	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544594565	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=121000
+1689544594566	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544594787	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=122000
+1689544594788	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544595030	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=123000
+1689544595032	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544595336	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=124000
+1689544595337	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544595581	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=125000
+1689544595582	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544595844	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=126000
+1689544595846	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544596101	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=127000
+1689544596103	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544596400	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=128000
+1689544596401	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544596672	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=129000
+1689544596673	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544596909	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=130000
+1689544596911	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544597174	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=131000
+1689544597176	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544597420	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=132000
+1689544597421	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544597717	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=133000
+1689544597719	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544597968	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=134000
+1689544597970	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544598229	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=135000
+1689544598230	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544598505	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=136000
+1689544598507	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544598807	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=137000
+1689544598808	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544599094	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=138000
+1689544599095	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544599369	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=139000
+1689544599370	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544599643	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=140000
+1689544599644	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544599886	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=141000
+1689544599887	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544600138	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=142000
+1689544600139	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544600425	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=143000
+1689544600427	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544600718	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=144000
+1689544600719	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544601022	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=145000
+1689544601023	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544601293	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=146000
+1689544601295	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544601609	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=147000
+1689544601610	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544601912	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=148000
+1689544601913	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544602207	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=149000
+1689544602208	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544602518	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=150000
+1689544602520	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544602851	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=151000
+1689544602853	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544603168	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=152000
+1689544603169	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544603484	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=153000
+1689544603485	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544603750	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=154000
+1689544603752	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544604100	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=155000
+1689544604102	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544604387	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=156000
+1689544604388	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544604703	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=157000
+1689544604704	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544605048	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=158000
+1689544605049	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544605373	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=159000
+1689544605374	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544605702	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=160000
+1689544605703	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544605997	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=161000
+1689544605999	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544606314	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=162000
+1689544606316	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544606625	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=163000
+1689544606627	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544606974	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=164000
+1689544606975	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544607288	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=165000
+1689544607289	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544607601	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=166000
+1689544607604	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544607903	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=167000
+1689544607904	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544608220	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=168000
+1689544608222	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544608550	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=169000
+1689544608551	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544608573	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1689544608681	Sync.SyncScheduler	DEBUG	Next sync in 90000 ms. (why=schedule)
+1689544608874	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=170000
+1689544608876	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544609192	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=171000
+1689544609194	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544609496	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=172000
+1689544609497	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544609859	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=173000
+1689544609860	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544610262	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=174000
+1689544610264	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544610622	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=175000
+1689544610623	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544610927	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=176000
+1689544610928	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544611247	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=177000
+1689544611248	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544611588	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=178000
+1689544611589	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544611940	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=179000
+1689544611941	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544612266	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=180000
+1689544612267	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544612588	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=181000
+1689544612590	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544612950	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=182000
+1689544612951	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544613283	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=183000
+1689544613284	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544613593	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1689544613593	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=184000
+1689544613594	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544613595	Sync.Engine.Tabs	INFO	Posting 1 records of 811 bytes with batch=true
+1689544613595	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544613595	Sync.Collection	DEBUG	POST Length: 811
+1689544613680	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/tabs?batch=true&commit=true
+1689544613683	Sync.Telemetry	INFO	Notification for engine tabs but it isn't current
+1689544613986	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=185000
+1689544613988	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544614268	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=186000
+1689544614270	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544614598	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=187000
+1689544614599	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544614907	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=188000
+1689544614912	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544615211	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=189000
+1689544615213	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544615546	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=190000
+1689544615552	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544615888	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=191000
+1689544615890	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544616229	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=192000
+1689544616230	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544616555	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=193000
+1689544616556	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544616870	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=194000
+1689544616875	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544617209	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=195000
+1689544617214	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544617527	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=196000
+1689544617529	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544617845	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=197000
+1689544617846	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544618217	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=198000
+1689544618218	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544618562	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=199000
+1689544618563	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544618914	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=200000
+1689544618915	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544619244	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=201000
+1689544619245	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544619616	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=202000
+1689544619617	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544619996	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=203000
+1689544619997	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544620341	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=204000
+1689544620342	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544620670	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=205000
+1689544620671	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544621007	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=206000
+1689544621008	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544621336	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=207000
+1689544621338	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544621760	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=208000
+1689544621762	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544622165	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=209000
+1689544622167	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544622534	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=210000
+1689544622535	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544622909	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=211000
+1689544622911	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544623263	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=212000
+1689544623264	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544623596	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=213000
+1689544623597	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544623978	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=214000
+1689544623981	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544624413	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=215000
+1689544624415	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544624836	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=216000
+1689544624838	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544625327	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=217000
+1689544625333	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544625720	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=218000
+1689544625721	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544626040	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=219000
+1689544626041	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544626427	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=220000
+1689544626429	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544626857	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=221000
+1689544626860	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544627204	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=222000
+1689544627206	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544627641	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=223000
+1689544627642	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544628031	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=224000
+1689544628032	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544628450	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=225000
+1689544628451	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544628809	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=226000
+1689544628810	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544629207	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=227000
+1689544629208	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544629624	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=228000
+1689544629625	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544630035	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=229000
+1689544630036	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544630473	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=230000
+1689544630475	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544630861	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=231000
+1689544630863	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544631315	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=232000
+1689544631316	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544631687	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=233000
+1689544631688	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544632045	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=234000
+1689544632046	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544632448	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=235000
+1689544632449	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544632805	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=236000
+1689544632807	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544633227	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=237000
+1689544633228	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544633634	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=238000
+1689544633635	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544634128	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=239000
+1689544634129	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544634591	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=240000
+1689544634592	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544635032	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=241000
+1689544635033	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544635443	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=242000
+1689544635444	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544635839	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=243000
+1689544635841	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544636205	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=244000
+1689544636206	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544636692	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=245000
+1689544636696	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544637186	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=246000
+1689544637187	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544637585	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=247000
+1689544637586	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544638008	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=248000
+1689544638009	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544638487	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=249000
+1689544638488	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544638921	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=250000
+1689544638922	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544639335	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=251000
+1689544639336	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544639709	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=252000
+1689544639710	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544640170	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=253000
+1689544640171	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544640684	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=254000
+1689544640685	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544641120	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=255000
+1689544641122	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544641591	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=256000
+1689544641593	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544642003	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=257000
+1689544642004	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544642481	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=258000
+1689544642484	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544642924	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=259000
+1689544642925	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544643424	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=260000
+1689544643426	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544643778	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=261000
+1689544643779	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544644158	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=262000
+1689544644160	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544644621	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=263000
+1689544644622	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544645112	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=264000
+1689544645113	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544645581	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=265000
+1689544645582	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544646029	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=266000
+1689544646030	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544646434	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=267000
+1689544646435	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544646897	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=268000
+1689544646898	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544647305	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=269000
+1689544647310	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544647833	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=270000
+1689544647834	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544648274	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=271000
+1689544648275	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544648682	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=272000
+1689544648684	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544649103	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=273000
+1689544649105	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544649557	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=274000
+1689544649558	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544649983	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=275000
+1689544649984	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544650442	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=276000
+1689544650443	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544650900	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=277000
+1689544650901	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544651365	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=278000
+1689544651371	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544651837	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=279000
+1689544651838	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544652350	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=280000
+1689544652352	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544652804	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=281000
+1689544652806	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544653218	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=282000
+1689544653219	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544653690	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=283000
+1689544653691	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544654227	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=284000
+1689544654228	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544654786	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=285000
+1689544654789	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544655300	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=286000
+1689544655303	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544655794	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=287000
+1689544655796	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544656272	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=288000
+1689544656273	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544656723	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=289000
+1689544656724	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544657137	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=290000
+1689544657138	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544657647	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=291000
+1689544657649	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544658125	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=292000
+1689544658126	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544658664	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=293000
+1689544658666	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544659144	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=294000
+1689544659145	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544659608	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=295000
+1689544659609	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544660052	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=296000
+1689544660053	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544660549	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=297000
+1689544660550	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544661011	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=298000
+1689544661013	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544661571	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=299000
+1689544661572	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544662145	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=300000
+1689544662146	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544662599	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=301000
+1689544662600	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544663181	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=302000
+1689544663183	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544663766	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=303000
+1689544663768	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544664333	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=304000
+1689544664334	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544664929	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=305000
+1689544664930	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544665416	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=306000
+1689544665418	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544665892	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=307000
+1689544665893	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544666428	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=308000
+1689544666429	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544666928	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=309000
+1689544666930	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544667384	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=310000
+1689544667385	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544667899	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=311000
+1689544667900	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544668416	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=312000
+1689544668417	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544669022	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=313000
+1689544669024	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544669562	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=314000
+1689544669563	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544670049	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=315000
+1689544670051	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544670595	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=316000
+1689544670597	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544671100	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=317000
+1689544671101	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544671732	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=318000
+1689544671733	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544672226	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=319000
+1689544672227	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544672764	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=320000
+1689544672765	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544673287	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=321000
+1689544673288	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544673845	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=322000
+1689544673846	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544674325	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=323000
+1689544674327	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544674826	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=324000
+1689544674828	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544675320	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=325000
+1689544675326	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544675878	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=326000
+1689544675880	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544676432	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=327000
+1689544676434	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544676927	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=328000
+1689544676928	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544677457	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=329000
+1689544677458	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544678050	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=330000
+1689544678051	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544678562	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=331000
+1689544678563	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544679119	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=332000
+1689544679120	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544679641	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=333000
+1689544679642	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544680164	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=334000
+1689544680166	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544680744	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=335000
+1689544680746	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544681322	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=336000
+1689544681323	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544681832	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=337000
+1689544681833	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544682370	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=338000
+1689544682371	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544682903	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=339000
+1689544682904	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544683405	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=340000
+1689544683407	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544683937	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=341000
+1689544683938	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544684553	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=342000
+1689544684554	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544685115	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=343000
+1689544685116	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544685755	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=344000
+1689544685756	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544686301	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=345000
+1689544686302	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544686827	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=346000
+1689544686829	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544687437	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=347000
+1689544687439	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544688068	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=348000
+1689544688069	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544688660	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=349000
+1689544688662	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544689217	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=350000
+1689544689218	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544689873	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=351000
+1689544689874	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544690507	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=352000
+1689544690508	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544691116	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=353000
+1689544691117	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544691659	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=354000
+1689544691661	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1689544691661	FirefoxAccounts	DEBUG	getOAuthToken enter
+1689544691661	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1689544691661	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1689544691661	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1689544691814	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1689544692226	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=355000
+1689544692228	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544692724	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=356000
+1689544692725	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544693347	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=357000
+1689544693349	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544693991	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=358000
+1689544693992	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544694533	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=359000
+1689544694534	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544695102	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=360000
+1689544695103	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544695584	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=361000
+1689544695585	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544696216	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=362000
+1689544696217	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544696783	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=363000
+1689544696784	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544697407	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=364000
+1689544697408	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544697910	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=365000
+1689544697911	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544698418	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=366000
+1689544698419	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544698681	Sync.Service	DEBUG	User-Agent: Firefox/115.0.2 (Linux x86_64) FxSync/1.117.0.20230715101035.desktop
+1689544698682	Sync.Service	INFO	Starting sync at 2023-07-16 15:58:18 in browser session 16s7M7UT-WWz
+1689544698682	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:46:5) JS Stack trace: LockException@util.sys.mjs:46:5
+throwLockException@util.sys.mjs:130:11
+WrappedLock@util.sys.mjs:144:15
+_lockedSync@service.sys.mjs:1359:6
+sync/<@service.sys.mjs:1324:18
+WrappedCatch@util.sys.mjs:115:27
+sync@service.sys.mjs:1325:7
+1689544698682	Sync.Service	INFO	Cannot start sync: already syncing?
+1689544699033	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=367000
+1689544699034	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544699532	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=368000
+1689544699533	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544700060	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=369000
+1689544700061	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544700646	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=370000
+1689544700649	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544701269	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=371000
+1689544701270	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544701917	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=372000
+1689544701918	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544702442	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=373000
+1689544702443	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544702972	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=374000
+1689544702973	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544703587	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=375000
+1689544703589	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544704086	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=376000
+1689544704088	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544704815	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=377000
+1689544704816	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544705462	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=378000
+1689544705463	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544706048	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=379000
+1689544706049	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544706682	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=380000
+1689544706683	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544707182	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=381000
+1689544707184	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544707708	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=382000
+1689544707710	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544708380	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=383000
+1689544708381	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544709033	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=384000
+1689544709034	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544709750	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=385000
+1689544709752	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544710449	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=386000
+1689544710451	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544711051	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=387000
+1689544711052	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544711589	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=388000
+1689544711590	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544712179	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=389000
+1689544712181	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544712788	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=390000
+1689544712789	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544713305	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=391000
+1689544713306	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544713848	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=392000
+1689544713850	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544714495	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=393000
+1689544714497	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544715054	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=394000
+1689544715057	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544715639	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=395000
+1689544715640	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544716276	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=396000
+1689544716278	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544716923	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=397000
+1689544716924	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544717554	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=398000
+1689544717555	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544718174	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=399000
+1689544718175	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544718824	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=400000
+1689544718826	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544719349	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=401000
+1689544719351	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544719873	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=402000
+1689544719874	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544720452	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=403000
+1689544720453	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544720998	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=404000
+1689544720999	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544721545	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=405000
+1689544721546	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544722117	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=406000
+1689544722119	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544722651	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=407000
+1689544722652	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544723168	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=408000
+1689544723169	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544723817	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=409000
+1689544723818	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544724501	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=410000
+1689544724502	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544725046	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=411000
+1689544725047	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544725721	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=412000
+1689544725722	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544726484	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=413000
+1689544726485	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544727141	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=414000
+1689544727142	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544728014	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=415000
+1689544728015	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544728560	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=416000
+1689544728561	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544729234	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=417000
+1689544729235	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544729797	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=418000
+1689544729798	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544730430	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=419000
+1689544730431	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544730959	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=420000
+1689544730961	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544731632	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=421000
+1689544731633	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544732184	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=422000
+1689544732187	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544732709	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=423000
+1689544732711	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544733405	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=424000
+1689544733406	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544734075	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=425000
+1689544734076	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544734716	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=426000
+1689544734718	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544735399	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=427000
+1689544735400	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544736070	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=428000
+1689544736072	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544736638	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=429000
+1689544736639	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544737349	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=430000
+1689544737350	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544737997	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=431000
+1689544737998	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544738602	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=432000
+1689544738604	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544739240	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=433000
+1689544739247	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544739904	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=434000
+1689544739906	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544740548	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=435000
+1689544740550	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544741196	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=436000
+1689544741198	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544741822	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=437000
+1689544741823	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544742392	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=438000
+1689544742393	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544742979	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=439000
+1689544742981	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544743683	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=440000
+1689544743684	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1689544743824	Sync.Collection	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161422932/storage/forms?full=1&limit=1000&offset=441000 failed: [Exception... "The connection was established, but no data was ever received"  nsresult: "0x804b0014 (NS_ERROR_NET_RESET)"  location: "<unknown>"  data: no] No traceback available
+1689544743824	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1689544743824	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1689544743824	Sync.Status	DEBUG	Status for engine forms: error.engine.reason.unknown_fail
+1689544743824	Sync.Status	DEBUG	Status.service: error.sync.failed => error.sync.failed_partial
+1689544743824	Sync.ErrorHandler	DEBUG	forms failed: [Exception... "The connection was established, but no data was ever received"  nsresult: "0x804b0014 (NS_ERROR_NET_RESET)"  location: "<unknown>"  data: no] No traceback available
+1689544743825	Sync.Status	DEBUG	Status for engine history: error.engine.reason.unknown_fail
+1689544743825	Sync.Status	DEBUG	Status.service: error.sync.failed_partial => error.sync.failed_partial
+1689544743825	Sync.ErrorHandler	DEBUG	history was interrupted due to the application shutting down
+1689544743825	Sync.Synchronizer	INFO	history was interrupted by shutdown; no other engines will sync
+1689544743825	Sync.Synchronizer	INFO	Aborting sync for failure in history
+1689544743825	Sync.Doctor	INFO	Skipping check of prefs - disabled via preferences
+1689544743825	Sync.Doctor	INFO	Skipping check of passwords - disabled via preferences
+1689544743825	Sync.Doctor	INFO	Skipping check of tabs - disabled via preferences
+1689544743825	Sync.Doctor	INFO	Skipping check of bookmarks - disabled via preferences
+1689544743825	Sync.Doctor	INFO	Skipping check of addons - disabled via preferences
+1689544743825	Sync.Doctor	INFO	Skipping check of addresses - disabled via preferences
+1689544743825	Sync.Doctor	INFO	Skipping check of creditcards - disabled via preferences
+1689544743825	Sync.Doctor	INFO	Skipping check of forms - disabled via preferences
+1689544743825	Sync.Doctor	INFO	Skipping validation: no engines qualify
+1689544743825	Sync.Synchronizer	INFO	Sync completed at 2023-07-16 15:59:03 after 172.30 secs.
+1689544743826	Sync.Declined	DEBUG	Handling remote declined: []
+1689544743826	Sync.Declined	DEBUG	Handling local declined: []
+1689544743826	Sync.Declined	DEBUG	Declined changed? false
+1689544743826	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1689544743826	Sync.ErrorHandler	ERROR	Some engines did not sync correctly.
+1689544743826	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
