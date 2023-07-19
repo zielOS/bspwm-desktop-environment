@@ -50,7 +50,7 @@ thunar --daemon &
 
 ## Launch eww  
 eww daemon &
-eww open bar &
+eww -c $HOME/.config/ewww open bar &
 
 ## Enable window swallowing
 pidof bspswallow | bspswallow &
