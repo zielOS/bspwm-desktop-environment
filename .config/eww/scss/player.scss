@@ -1,71 +1,67 @@
 .player {
-  font-family: "SF Pro", "Font Awesome 6 Pro Solid";
-  background-color: $bg;
-  padding: 0.6rem;
-  min-height: 12rem;
-  border-radius: 0.6rem;
+  background-color: $bg-alt;
+  border-radius: 1rem;
 
-  .player-art {
+  &.cover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0 0 0.2rem black;
+    box-shadow: 0 0 2px 3px rgba(black, 0.2);
     border-radius: 1.2rem;
-    min-width: 22rem;
+    min-height: 13rem;
 
-    .player-info {
+    .info {
       border-radius: 1rem;
       background: linear-gradient(to right, rgb($bg-alt, 1), rgba($black, 0.5));
-      padding: 0.65rem;
+      padding: 1rem 1rem .5rem;
+      text-shadow: 0 0 .5rem rgba($color: black, $alpha: 1);
 
-      .player-shuffle,
-      .player-loop {
-        font-size: 1rem;
-        text-shadow: 0 0 0.2rem black;
+      .icons {
+
+        .shuffle,
+        .loop {
+          font-size: 1rem;
+        }
+
+        .app {
+          font-size: 1.25rem;
+          color: $green;
+          text-shadow: 0 0 3px black;
+        }
       }
 
-      .spotify-icon {
-        font-size: 1.25rem;
-        color: $green;
-        text-shadow: 0 0 0.2rem black;
-      }
-
-      .player-title {
+      .title {
         font-size: 1.1rem;
         font-weight: bolder;
-        text-shadow: 0 0 0.5rem rgba($color: black, $alpha: 1);
+        
       }
 
-      .player-artist {
+      .artist {
         color: $white;
-        text-shadow: 0 0 0.5rem rgba($color: black, $alpha: 1);
       }
 
-      .player-album {
+      .album {
         color: $white;
-        text-shadow: 0 0 0.5rem rgba($color: black, $alpha: 1);
       }
 
-      .player-bar scale trough highlight {
+      .progress scale trough highlight {
         all: unset;
-        background-image: linear-gradient(
-          to right,
-          darken($color: $green, $amount: 15%),
-          $green
-        );
         border-radius: 2rem;
+        background-image: linear-gradient(to right,
+          darken($color: $green, $amount: 15%),
+          $green );
       }
 
-      .player-bar scale trough {
+      .progress scale trough {
         all: unset;
-        background-color: rgba($cyan, 0.3);
-        box-shadow: 0px 0px 2px 1px rgba(black, 0.5);
+        background-color: rgba($cyan, 0.2);
+        box-shadow: 0 0 2px 1px rgba(black, 0.5);
         border-radius: 1rem;
         min-height: 0.25rem;
-        margin: 0rem 0.2rem 0.2rem 0rem;
+        margin-bottom: 5px;
       }
 
-      .player-position {
+      .position {
         font-size: 0.9rem;
         font-weight: 500;
         color: $fg-alt;
@@ -73,17 +69,16 @@
     }
   }
 
-  .player-controls {
-    padding: 0rem 0.7rem 0rem 1rem;
-    border-radius: 1rem;
+  &.controls {
+    margin: 0 1rem;
 
-    .player-toggle {
+    .toggle {
       font-size: 2rem;
       color: $fg;
     }
 
-    .player-previous,
-    .player-next {
+    .previous,
+    .next {
       font-size: 1.6rem;
       color: $fg-alt;
     }

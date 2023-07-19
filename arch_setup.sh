@@ -9,7 +9,7 @@ genfstab -U / >> /etc/fstab
 
 reflector --verbose --country 'CA,US' -l 25 --sort rate --save /etc/pacman.d/mirrorlist
 
-pacman -S unzip zip unrar btrfs-progs dosfstools wget curl neofetch upower zathura zathura-pdf-poppler python-pynvim neovim ripgrep fd zsh zsh-completions zoxide fzf lazygit xdg-user-dirs xdg-user-dirs-gtk xdg-utils thunar tumbler thunar-volman thunar-archive-plugin thunar-media-tags-plugin gvfs feh rofi dunst flameshot xsel xclip xfce4-power-manager xorg-xsetroot xorg-server nvidia-dkms nvidia-utils nvidia-settings mesa rng-tools haveged lynis firejail audit sysstat apparmor grub mlocate fdupes acpi tmux tealdeer linux-zen linux-zen-headers ranger python-pygments atool 
+pacman -S unzip zip unrar btrfs-progs dosfstools wget curl neofetch upower zathura zathura-pdf-poppler python-pynvim neovim neovim-nvim-treesitter ripgrep fd zsh zsh-completions zoxide fzf lazygit xdg-user-dirs xdg-user-dirs-gtk xdg-utils thunar tumbler thunar-volman thunar-archive-plugin thunar-media-tags-plugin gvfs hsetroot rofi dunst flameshot xsel xclip xfce4-power-manager xorg-xsetroot xorg-server nvidia-dkms nvidia-utils nvidia-settings mesa rng-tools haveged lynis firejail audit sysstat apparmor grub mlocate tmux tealdeer linux-zen linux-zen-headers ranger python-pygments atoolfirefox pipewire-pulse pipewire-alsa pipewire-jack wireplumber python-pip rust nodejs npm flatpak flatpak-builder transmission-gtk cmake boost polkit-gnome imv gammastep lxappearance curl ttf-jetbrains-mono-nerd ttf-firacode-nerd gnome-keyring power-profiles-daemon papirus-icon-theme stow cronie bleachbit networkmanager lsd emacs-nativecomp  
 
 
 ln -sf /usr/share/zoneinfo/Canada/Mountain /etc/localtime && hwclock --systohc && nvim /etc/locale.gen && locale-gen && echo "LANG=en_CA.UTF-8" >> /etc/locale.conf
@@ -31,7 +31,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot && grub-install --target=
 
 ** Systemd Setup
 
-systemd-firstboot --prompt --setup-machine-id && systemctl enable NetworkManager fstrim.timer acpid systemd-timesyncd sysstat auditd
+systemd-firstboot --prompt --setup-machine-id && systemctl enable NetworkManager fstrim.timer power-profiles-daemon systemd-timesyncd sysstat auditd
 
 
 # Post-install chroot

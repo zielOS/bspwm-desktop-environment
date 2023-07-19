@@ -1,24 +1,47 @@
 #!/bin/bash
 
-cd && echo "Installing yay-bin"
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
+#!/bin/bash
 
-echo "Installing aur packages"
-yay -S sxhkd-git bspwm-git fnm eww-x11-git papirus-folders-catppuccin-git catppuccin-gtk-theme-mocha catppuccin-cursors-mocha ckb-next aide insync acct ueberzugpp
+cd && cd AUR && git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si -r && cd
 
-echo "Setting Up npm"
-cd 
-mkdir ~/.npm-global 
-npm config set prefix '~/.npm-global' 
+echo "Installing Aur packages"
+yay -S bspwm-git
+yay -S sxhkd-git
+yay -S eww-x11-git 
+yay -S papirus-folders-catppuccin-git.git
+yay -S catppuccin-gtk-theme-mocha
+yay -S nodejs-neovim
+yay -S catppuccin-cursors-mocha
+yay -S betterlockscreen
+yay -S fnm
+yay -S insync
+yay -S acct
+yay -S aide
+yay -S ckb-next
+yay -S stacer
+yay -S pamac-all
+yay -S jgmenu-git
+yay -S mullvad-vpn
+yay -S picom-ftlabs-git
 
-echo "Setting up systemd"
+echo "setup lunarvim"
+cd && mkdir ~/.npm-global && npm config set prefix '~/.npm-global'
+LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh) 
+
+zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
+sudo rm -R $HOME/.zshrc
+
+echo "Setup Systemd"
 sudo systemctl set-default graphical.target 
-systemctl --user enable --now wireplumber.service pipewire-pulse.socket pipewire.socket pipewire-pulse.service pipewire.service pipewire-pulse.socket pipewire.socket pipewire-pulse.service pipewire.service
+systemctl --user enable --now wireplumber.service pipewire-pulse.socket pipewire.socket pipewire-pulse.service pipewire.service pipewire-pulse.socket pipewire.socket pipewire-pulse.service pipewire.service 
 
-echo "Setting Up zsh shell"
-zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh)
-chsh -s $(which zsh)
-sudo rm -R .zshrc
+echo "snapd & flatpak setup"
+cd && sudo systemctl enable --now snapd.socket && sudo ln -s /var/lib/snapd/snap /snap 
 
+
+
+echo "Setting up dotfiles0"
+cd && cd arch-hyprland-DE 
+stow .

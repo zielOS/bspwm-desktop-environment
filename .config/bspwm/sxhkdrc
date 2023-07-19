@@ -51,6 +51,10 @@ super + alt + c
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
+# Lockscreen
+ctrl + alt + l
+    betterlockscreen -l
+
 # mouse action for jgmenu
 #button3
 #	bspc query -D -d 'focused.!occupied' \#
@@ -68,9 +72,21 @@ super + q
 super + {Left,Down,Up,Right}
 	bspc node -f {west,south,north,east}
 
-# resize windows
+# Split horizontal, vertical or cancel
+super + {h,v,c}
+	bspc node -p {east,south,cancel}
+
+# Smart resize, will grow or shrink depending on location.
+# Will always grow for floating nodes.
 super + shift + {Left,Down,Up,Right}
-  { bspshrinkx, bspexpandy, bspshrinkx, bspexpandx }
+  n=10; \
+  { d1=left;   d2=right;  dx=-$n; dy=0;   \
+  , d1=bottom; d2=top;    dx=0;   dy=$n;  \
+  , d1=top;    d2=bottom; dx=0;   dy=-$n; \
+  , d1=right;  d2=left;   dx=$n;  dy=0;   \
+  } \
+  bspc node --resize $d1 $dx $dy || bspc node --resize $d2 $dx $dy
+
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
@@ -94,9 +110,13 @@ super + {o,i}
 	bspc node {older,newer} -f; \
 	bspc wm -h on
 
-# set the window state
-super + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+# toggle between tiled & fullscreen
+super + f
+	bspc node -t "~"{tiled,fullscreen}
+
+# toggle between floating & tiled
+super + space
+  bspc node -t "~"{floating,tiled}
 
 # hide window
 super + e
