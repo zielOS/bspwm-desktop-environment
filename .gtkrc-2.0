@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/ahsan/.gtkrc-2.0.mine"
-gtk-theme-name="Catppuccin-Mocha-Standard-Lavender-Dark"
+gtk-theme-name="Catppuccin-Mocha-Standard-Lavender-dark"
 gtk-icon-theme-name="Papirus-Dark"
 gtk-font-name="JetBrainsMono Nerd Font Medium 12"
 gtk-cursor-theme-name="Catppuccin-Mocha-Lavender-Cursors"
@@ -15,4 +15,5 @@ gtk-enable-event-sounds=1
 gtk-enable-input-feedback-sounds=1
 gtk-xft-antialias=1
 gtk-xft-hinting=1
-gtk-xft-hintstyle="hintfull"
+gtk-xft-hintstyle="hintmedium"
+gtk-xft-rgba="rgb"

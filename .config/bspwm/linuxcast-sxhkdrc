@@ -1,0 +1,156 @@
+# Open terminal
+super + Return
+	kitty
+
+# App launcher
+super + d
+	rofi -show drun -config .config/bspwm/rofi/configs/config.rasi -width 420
+
+# Powermenu
+super + x
+	powermenu
+
+# Open file manager
+super + shift + Return
+	krusader
+
+# Open browser
+super + w
+	vivaldi-stable
+
+# Discord
+alt + n
+    flatpak run com.discordapp.Discord
+
+alt + s
+    flatpak run com.todoist.Todoist
+
+alt + z; {a,s}
+   {viddesc, poddesc}
+
+super + g; {g,k,a,o} 
+  {flatpak run org.gimp.GIMP,flatpak run org.kde.kdenlive,audacity,flatpak run com.obsproject.Studio}
+
+alt + r
+    ranwal.sh
+
+# Make screenshot
+ctrl + alt + s
+	flameshot gui
+
+#Audio Keybindings
+
+alt + d
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+alt + a
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+alt + {h,j,k,l}
+   mpc {prev,next,play,pause}
+
+# Dunst mute/unmute
+super + m
+	{dunstctl set-paused true && polybar-msg hook dunst 2, \
+	 dunstctl set-paused false && polybar-msg hook dunst 1}
+
+# Dunst history
+super + shift + d
+	{dunst_hist display-history, dunst_hist close-history}
+
+# Colorpiker
+super + p
+	colorpicker
+
+super + n
+    scratchpad mysp
+
+super + m
+    scratchpad Music
+
+super + c
+    scratchpad ranger
+
+super + v
+    scratchpad pulse
+
+super + shift + n
+    scratchpad scp2
+
+super + b
+    scratchpad news
+
+# Close/kill focus app
+super + {q, shift + q}
+	bspc node -{c,k}
+
+# Reload sxhkd config
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# Reload bspwm config
+super + shift + r
+	bspc wm -r
+
+#Logout
+super + shift + x
+	bspc quit
+
+# Set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# Focus/swap windows by direction
+super + {_,shift + }{h,j,k,l}
+	bspc node --{focus,swap} {west,south,north,east}
+
+# Focus the node in the given direction
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# Focus/send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# Preselect the direction
+super + alt + {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+
+# Cancel the preselection for the focused node
+super + alt + space
+	bspc node -p cancel 
+
+# Move current window to a pre-selected space
+super + alt + m
+	bspc node -n last.!automatic
+
+# Show help
+super + shift + s
+	sxhkd_help
+
+# Resize tiling windows
+super + ctrl + {Left,Down,Up,Right}
+	{bspc node -z left -20 0; bspc node -z right -20 0, \
+	bspc node -z bottom 0 20; bspc node -z top 0 20, \
+	bspc node -z bottom 0 -20; bspc node -z top 0 -20, \ 
+	bspc node -z left 20 0; bspc node -z right 20 0}
+
+# books
+super + shift + p
+	$HOME/.config/bspwm/rofi/scripts/books
+
+# Resize floating windows
+alt + ctrl + {Left,Down,Up,Right}
+	bspc node -z {right -20 20, bottom 20 20, bottom 20 -20, right 20 20}
+
+# move floating windows 
+alt + shift + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+super + {equal, minus, 0}
+	gaps {+, -, =}
+
+super + ctrl + {equal, minus, 0}
+	borders {+, -, =}
+
+

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+case "$1" in
+  tsp) 		
+    entry="kitty --class mysp -T tsp"
+    ;;	
+  tsp2) 		
+    entry="kitty --class tsp2 -T tsp2" 		
+    ;;
+  ranger)
+    entry="kitty --class ranger -T ranger -e ranger"
+    ;;
+  vifm)
+    entry="kitty --class vifm -T vifm -e vifm"
+    ;;
+  lvim)
+    entry="kitty --class lvim -T lvim -e lvim"
+    ;;
+esac
+
+xdotool search --onlyvisible --classname "$1" windowunmap \
+  || xdotool search --classname "$1" windowmap \
+  || $entry &

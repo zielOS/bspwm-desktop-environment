@@ -1,0 +1,131 @@
+* {
+	all: unset;
+	transition: 200ms;
+}
+
+$bg: #0f0f0f;
+$bg-alt: #191919;
+$fg: #f0f0f0;
+$fg-alt: #cacaca;
+$black: #262626;
+$gray: #4c4c4c;
+$red: #dd6777;
+$green: #9ec49f;
+$yellow: #ceb188;
+$blue: #a39ec4;
+$magenta: #c49ec4;
+$cyan: #9ec3c4;
+$white: $fg;
+
+tooltip {
+	background-color: $bg;
+	font-family: FiraCode Nerd Font;
+	font-weight: 500;
+	font-size: .9rem;
+}
+
+.calendar {
+  font-family: FiraCode Nerd Font;
+  background-color: $bg;
+  padding: 1rem;
+
+  .calendar-clock {
+    .time {
+      font-family: FiraCode Nerd Font;
+      font-weight: bolder;
+      font-size: 3rem;
+      color: $fg;
+    }
+
+    .timeboxes {
+      font-size: 0.5rem;
+
+      .magenta {
+        color: $magenta;
+      }
+
+      .green {
+        color: $green;
+      }
+
+      .yellow {
+        color: $yellow;
+      }
+    }
+
+    .clock-today {
+      font-size: 1.3rem;
+      color: $fg-alt;
+    }
+  }
+
+  .calendar-box {
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    padding: 1rem 1rem 0 1rem;
+
+    calendar {
+      padding: 0.5rem;
+
+      &.button {
+        color: $fg-alt;
+
+        &:hover {
+          background-color: $black;
+          border-radius: 1rem;
+        }
+      }
+
+      &:selected {
+        color: $green;
+      }
+
+      &.header {
+        background-color: transparent;
+        border: none;
+      }
+
+      &.highlight {
+        color: $green;
+      }
+
+      &:indeterminate {
+        color: $gray;
+      }
+    }
+  }
+
+  .weather-box {
+
+    .weather-info-box {
+      background-color: $bg-alt;
+      border-radius: 1rem;
+      padding: 1rem;
+
+      .weather-desc {
+        font-size: 1.25rem;
+        color: $fg-alt;
+      }
+    }
+
+    .weather-temp {
+      font-size: 1.55rem;
+      font-weight: bolder;
+      color: $fg;
+    }
+
+    .weather-icon-box {
+      background-color: $bg-alt;
+      border-radius: 1rem;
+      padding: 1rem;
+      
+      .weather-icon {
+        font-size: 3rem;
+        text-shadow: 0 0 0.2rem black;
+        min-width: 4rem;
+      }
+    }
+  }
+}

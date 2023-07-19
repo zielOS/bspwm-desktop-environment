@@ -1,0 +1,124 @@
+################################
+### G E N E R A L    H E L P ###
+################################
+super + Escape
+	pkill -USR1 -x sxhkd && dunstify -u low -i input-keyboard 'SXHKD' reloaded
+
+super + shift + Escape
+	bat $XDG_CONFIG_HOME/sxhkd/sxhkdrc | yad --text-info
+
+
+################################
+### A P P L I C A T I O N S ####
+################################
+
+### Launch terminal
+super + Return
+  st
+
+super + shift + Return
+	bspterm --float
+
+### Launch menu
+super + d
+  bspmenu
+
+## Launch gui apps
+super + g; {b, f, e}
+	{ firefox, thunar, emacsclient -c -a emacs }
+
+#################################
+### H A R D W A R E   K E Y S ###
+#################################
+
+# screenshot
+Print
+	flameshot gui
+
+# volume control
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+  volume { --up, --down, --toggle }
+
+###############
+### M I S C ###
+###############
+
+## get window class name
+super + alt + c
+  dunstify -i gtk-dialog-info CLASS "$(xprop | grep 'CLASS')"
+
+# quit/restart bspwm
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
+# mouse action for jgmenu
+#button3
+#	bspc query -D -d 'focused.!occupied' \#
+#		&& jgmenu_run
+
+###################################
+### M A N A G E   W I N D O W S ###
+###################################
+
+# close and kill
+super + q
+	bspc node -c
+
+# focus the node in the given direction
+super + {Left,Down,Up,Right}
+	bspc node -f {west,south,north,east}
+
+# resize windows
+super + shift + {Left,Down,Up,Right}
+  { bspshrinkx, bspexpandy, bspshrinkx, bspexpandx }
+
+# focus the node for the given path jump
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# focus the next/previous window in the current desktop
+super + {_,shift + }c
+	bspc node -f {next,prev}.local.!hidden.window
+
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# focus the older or newer node in the focus history
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# hide window
+super + e
+	bspc node -g hidden
+
+# unhide window
+super + shift + e
+	bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
+
+
+# focus or send to the given desktop
+super + {_,shift + }{1-6}
+	bspc {desktop -f,node -d} 'focused:^{1-6}'
+
+super + minus
+    bspc monitor -f next
+
+
+#############################
+### S C R A T C H P A D S ###
+#############################
+
+super + shift + s; {t, shift + t, r, v, l}
+	bspscratchpad { tsp, tsp2, ranger, vifm, lvim }
+

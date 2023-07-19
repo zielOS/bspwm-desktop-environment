@@ -1,0 +1,4 @@
+#!/bin/bash
+
+eww open powermenu || \
+eww open --toggle powermenu

@@ -1,0 +1,54 @@
+* {
+	all: unset;
+	transition: 200ms;
+}
+
+$bg: #0f0f0f;
+$bg-alt: #191919;
+$fg: #f0f0f0;
+$fg-alt: #cacaca;
+$black: #262626;
+$gray: #4c4c4c;
+$red: #dd6777;
+$green: #9ec49f;
+$yellow: #ceb188;
+$blue: #a39ec4;
+$magenta: #c49ec4;
+$cyan: #9ec3c4;
+$white: $fg;
+
+tooltip {
+	background-color: $bg;
+	font-family: FiraCode Nerd Font;
+	font-weight: 500;
+	font-size: .9rem;
+}
+
+.volume-popup-box {
+  font-family: FiraCode Nerd Font;
+  background-color: $bg;
+  padding: 0.4rem;
+
+  .volume-popup-icon {
+    font-size: 2.2rem;
+    margin-left: 0.6rem;
+  }
+
+  .volume-popup-bar scale trough highlight {
+    all: unset;
+    background-image: linear-gradient(
+      to right,
+      darken($color: $green, $amount: 20%),
+      $green
+    );
+    border-radius: 1rem;
+  }
+
+  .volume-popup-bar scale trough {
+    all: unset;
+    background-color: $bg-alt;
+    border-radius: 1rem;
+    min-height: 3rem;
+    min-width: 15rem;
+  }
+}
