@@ -1973,3 +1973,155 @@ INFO     2023-07-20 14:16:40,027 [syncwork:pause_tree:757] Paused tree: /home/ah
 INFO     2023-07-20 14:16:40,028 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
 INFO     2023-07-20 14:16:40,030 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
 ERROR    2023-07-20 14:16:40,030 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:57:42.382: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:57:42,384 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:57:42,385 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:57:42,387 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:57:42,387 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:57:42,388 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:57:42,388 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:57:42.390: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:57:42,390 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:57:42,390 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:57:42,390 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:57:42,391 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:57:42,391 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:57:42,391 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:57:51.582: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:57:51,582 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:57:51,582 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:57:51,582 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:57:51,583 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:57:51,583 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:57:51,584 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:57:51.585: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:57:51,585 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:57:51,585 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:57:51,585 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:57:51,585 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:57:51,586 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:57:51,586 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:57:54.097: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:57:54,097 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:57:54,097 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:57:54,097 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:57:54,098 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:57:54,098 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:57:54,100 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:57:54.102: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:57:54,102 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:57:54,103 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:57:54,103 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:57:54,104 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:57:54,104 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:57:54,104 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:58:01.197: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:58:01,197 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:01,198 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:01,198 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:01,198 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:01,198 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:58:01,199 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:58:03.541: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:58:03,541 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:03,541 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:03,542 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:03,543 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:03,543 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:58:03,544 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:58:03.544: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:58:03,544 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:03,544 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:03,546 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:03,546 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:03,547 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:58:03,548 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:58:08.007: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:58:08,007 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:08,007 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:08,008 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:08,008 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:08,008 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:58:08,009 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:58:08.011: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:58:08,011 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:08,011 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:08,011 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:08,011 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:08,012 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:58:08,012 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:58:12.597: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:58:12,597 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:12,597 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:12,597 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:12,597 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:12,598 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:58:12,598 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:58:12.601: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:58:12,601 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:12,601 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:12,601 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:12,602 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:12,602 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:58:12,603 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:58:16.008: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:58:16,008 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:16,008 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:16,008 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:16,009 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:16,009 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:58:16,010 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:58:16.011: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:58:16,011 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:16,011 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:16,012 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:16,012 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:16,013 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:58:16,014 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:58:49.571: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:58:49,571 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:49,571 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:49,572 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:49,572 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:49,573 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:58:49,573 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:58:49.574: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:58:49,574 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:49,575 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:49,575 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:49,575 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:49,576 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:58:49,576 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:58:49.666: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:58:49,666 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:49,666 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:49,666 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:49,667 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:49,667 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:58:49,668 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1501): GLib-GIO-CRITICAL **: 21:58:49.687: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-20 21:58:49,687 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:49,687 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:49,688 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-20 21:58:49,688 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-20 21:58:49,688 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-20 21:58:49,689 [platui_impl:display_notification:82] Cannot initialize notifications.

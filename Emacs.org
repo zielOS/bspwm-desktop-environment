@@ -1,5 +1,4 @@
-
-::#+TITLE: Personal Emacs Configuration
+#+TITLE: Personal Emacs Configuration
 #+PROPERTY: header-args:emacs-lisp :tangle ./.emacs.d/init.el :mkdirp yes
 
 * Initial Setup

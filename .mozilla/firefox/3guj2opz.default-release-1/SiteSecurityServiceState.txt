@@ -1,9 +1,11 @@
 accounts.firefox.com:HSTS	0	19559	1721442345480,1,1
+todoist.com^partitionKey=%28http%2Ctodoist.com%29:HSTS	0	19559	1721447936316,1,1
 api.accounts.firefox.com:HSTS	0	19559	1721442182009,1,1
 youtube.com^partitionKey=%28http%2Cyoutube.com%29:HSTS	0	19559	1721442255657,1,1
 wiki.archlinux.org^partitionKey=%28http%2Carchlinux.org%29:HSTS	0	19559	1721447375841,1,1
 www.google.com^firstPartyDomain=google-b-d.search.suggestions.mozilla:HSTS	0	19559	1721442896319,1,0
 gitlab.com:HSTS	0	19559	1721442345474,1,0
+ogs.google.com^partitionKey=%28http%2Cgoogle.com%29:HSTS	0	19559	1721448175899,1,0
 aur.archlinux.org^partitionKey=%28http%2Carchlinux.org%29:HSTS	0	19559	1721446883411,1,1
 firefox.settings.services.mozilla.com:HSTS	0	19559	1721442151079,1,0
 services.addons.mozilla.org:HSTS	0	19559	1721442337106,1,0
@@ -21,6 +23,7 @@ addons.mozilla.org^partitionKey=%28http%2Cmozilla.org%29:HSTS	0	19559	1721447128
 www.google.com^partitionKey=%28http%2Cgoogle.com%29:HSTS	0	19559	1721442897780,1,0
 proton.me:HSTS	0	19559	1721447575361,1,1
 www.youtube.com^partitionKey=%28http%2Cyoutube.com%29:HSTS	0	19559	1721442249623,1,0
+gist.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	0	19559	1721448229033,1,1
 accounts.firefox.com^partitionKey=%28http%2Cfirefox.com%29:HSTS	0	19559	1721442162368,1,1
 lastpass.com^partitionKey=%28http%2Clastpass.com%29:HSTS	0	19559	1776311135893,1,0
 wiki.archlinux.org:HSTS	0	19559	1721442346592,1,1
@@ -36,6 +39,7 @@ kernel.org:HSTS	0	19559	1705674347409,1,0
 mail.proton.me^partitionKey=%28http%2Cproton.me%29:HSTS	0	19559	1721447593890,1,1
 accounts.google.com^partitionKey=%28http%2Cgoogle.com%29:HSTS	0	19559	1721442315453,1,1
 account-api.proton.me^partitionKey=%28http%2Cproton.me%29:HSTS	0	19559	1721447587334,1,1
+pollserver.lastpass.com:HSTS	0	19559	1776312099375,1,0
 www.lastpass.com:HSTS	0	19559	1776311159646,1,0
 www.lastpass.com^partitionKey=%28http%2Clastpass.com%29:HSTS	0	19559	1776311158912,1,0
 publicsuffix.org:HSTS	0	19559	1705458432012,1,1
