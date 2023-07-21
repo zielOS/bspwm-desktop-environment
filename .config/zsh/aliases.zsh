@@ -10,9 +10,9 @@ alias f='zi'
 
 # Pacman-related alias
 alias em-sync='sudo emerge --sync'
-alias em-update='sudo emerge -auvDN @world'
-alias em-install='sudo emerge -av --jobs=5'
-alias em-remove='sudo emerge --depclean'
+alias pac-update='sudo pacman -Syyuu'
+alias pac-install='sudo pacman -S'
+alias pac-remove='sudo pacman -R'
 alias em-search='sudo emerge -Ss'
 alias em-clean='sudo eclean-dist --deep && sudo emerge --depclean'
 alias pac-cleanup='sudo pacman -Qtdq | sudo pacman -Rns -'

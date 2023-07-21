@@ -1,4 +1,4 @@
-st.font:         JetBrainsMono Nerd Font:style:medium:pixelsize=27
+st.font:         JetBrainsMono Nerd Font:style:medium:pixelsize=28
 
 ! window padding
 st.borderpx: 8

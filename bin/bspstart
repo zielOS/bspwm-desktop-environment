@@ -29,7 +29,7 @@ while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom --config $HOME/.config/picom/picom.conf &
 
 # Restore wallpaper
-hsetroot -root -cover ~/.config/wallpapers/tokyonight.jpg &
+hsetroot -root -cover ~/.config/wallpapers/trigonometry.png &
 
 # Restore display
 xrandr --output DP-0 --off --output DP-1 --off --output DP-0 --scale 0.9x0.9 --mode 2560x1440 --pos 0x0 --rotate normal --output DP-2 --scale 0.9x0.9 --primary --mode 3440x1440 --pos 2304x0 --rotate normal --output DP-4 --scale 0.9x0.9 --mode 2560x1440 --pos 5400x0 --rotate normal --output USB-C-0 --off &

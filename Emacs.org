@@ -2,1099 +2,205 @@
 ::#+TITLE: Personal Emacs Configuration
 #+PROPERTY: header-args:emacs-lisp :tangle ./.emacs.d/init.el :mkdirp yes
 
-* Package Management
-** Straight.el
-
-#+begin_src emacs-lisp :tangle yes
-(defvar bootstrap-version)
-(let ((bootstrap-file
-       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
-      (bootstrap-version 5))
-  (unless (file-exists-p bootstrap-file)
-    (with-current-buffer
-	(url-retrieve-synchronously
-	 "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
-	 'silent 'inhibit-cookies)
-      (goto-char (point-max))
-      (eval-print-last-sexp)))
-      (load bootstrap-file nil 'nomessage))
-#+end_src
-
-** use-package
-#+begin_src emacs-lisp :tangle yes
-(straight-use-package 'use-package)
-(eval-when-compile (require 'use-package))
-
-#+end_src
-
-
-* Performance
-** Measure Startup Speed
-
-#+begin_src emacs-lisp :tangle yes
-(setq my/emacs-started nil)
-
-(add-hook 'emacs-startup-hook
-	  (lambda ()
-	    (message "*** Emacs loaded in %s with %d garbage collections."
-		     (format "%.2f seconds"
-			     (float-time
-			      (time-subtract after-init-time before-init-time)))
-		     gcs-done))
-	  (setq my/emacs-started t))
-#+end_src
-
-** Garbage Collection
-
-#+begin_src emacs-lisp :tangle yes
-(setq gc-cons-threshold 80000000)
-(setq read-process-output-max (* 1024 1024))
-
-(add-hook 'emacs-startup-hook
-	  (lambda ()
-	    (if (boundp 'after-focus-change-function)
-		(add-function :after after-focus-change-function
-			      (lambda ()
-				(unless (frame-focus-state)
-				  (garbage-collect))))
-	      (add-hook 'after-focus-change-function 'garbage-collect))))
-#+end_src
-
-** Measure RAM usage
-
-#+begin_src emacs-lisp :tangle yes
-(defun my/get-ram-usage-async (callback)
-  (let* ((temp-buffer (generate-new-buffer "*ps*"))
-	 (proc (start-process "ps" temp-buffer "ps"
-			      "-p" (number-to-string (emacs-pid)) "-o" "rss")))
-    (set-process-sentinel
-     proc
-     (lambda (process _msg)
-       (when (eq (process-status process) 'exit)
-	 (let* ((output (with-current-buffer temp-buffer
-			  (buffer-string)))
-		(usage (string-to-number (nth 1 (split-string output "\n")))))
-	   (ignore-errors
-	     (funcall callback usage)))
-	 (kill-buffer temp-buffer))))))
-
-(defun my/ram-usage ()
-  (interactive)
-  (my/get-ram-usage-async
-   (lambda (data)
-     (message "%f Gb" (/ (float data) 1024 1024)))))
-
-#+end_src
-
-
-* Anaconda
-
-#+begin_src emacs-lisp :tangle yes
-(use-package conda
-  :straight t
-  :if (executable-find "conda")
-  :config
-  (setq conda-anaconda-home (string-replace "/bin/conda" "" (executable-find "conda")))
-  (setq conda-env-home-directory (expand-file-name "~/.conda/"))
-  (setq conda-env-subdirectory "envs")
-
-  (advice-add 'conda-env-activate :after
-	      (lambda (&rest _)
-		(setenv "EMACS_CONDA_ENV" conda-env-current-name)
-		(setenv "INIT_CONDA" "true")))
-  (advice-add 'conda-env-deactivate :after
-	      (lambda (&rest _)
-		(setenv "EMACS_CONDA_ENV" nil)
-		(setenv "INIT_CONDA" nil)))
-  (unless (getenv "CONDA_DEFAULT_ENV")
-    (conda-env-activate "general")))
-#+end_src
-
+* Initial Setup
+** Packages
+*** straight.el
+*** use-package
+** Performance
+*** Measure startup speed
+*** Garbage collection
+*** Run garbage collection when Emacs is unfocused
+*** Measure RAM usage
+** Anaconda
+** Config files
 
 * General Settings
-
-** No littering
-
-#+begin_src emacs-lisp :tangle yes
-(use-package no-littering
-  :straight t)
-#+end_src
-
 ** Keybindings
 *** general.el
-
-#+begin_src emacs-lisp :tangle yes
-(use-package general
-  :straight t
-  :config
-  (general-evil-setup))
-
-#+end_src
-
 *** which-key
-
-#+begin_src emacs-lisp :tangle yes
-(use-package which-key
-  :config
-  (setq which-key-idle-delay 0.1)
-  (setq which-key-popup-type 'frame)
-  (which-key-mode)
-  (which-key-setup-side-window-bottom)
-  (set-face-attribute 'which-key-local-map-description-face nil
-		      :weight 'bold)
-  :straight t)
-
-#+end_src
-
-*** dump keybindings
-
-#+begin_src emacs-lisp :tangle yes
-(defun my/dump-bindings-recursive (prefix &optional level buffer)
-  (dolist (key (which-key--get-bindings (kbd prefix)))
-    (with-current-buffer buffer
-      (when level
-	(insert (make-string level ? )))
-      (insert (apply #'format "%s%s%s\n" key)))
-    (when (string-match-p
-	   (rx bos "+" (* nonl))
-	   (substring-no-properties (elt key 2)))
-      (my/dump-bindings-recursive
-       (concat prefix " " (substring-no-properties (car key)))
-       (+ 2 (or level 0))
-       buffer))))
-
-(defun my/dump-bindings (prefix)
-  "Dump keybindings starting with PREFIX in a tree-like form."
-  (interactive "sPrefix: ")
-  (let ((buffer (get-buffer-create "bindings")))
-    (with-current-buffer buffer
-      (erase-buffer))
-    (my/dump-bindings-recursive prefix 0 buffer)
-    (with-current-buffer buffer
-      (goto-char (point-min)))
-    (switch-to-buffer-other-window buffer)))
-
-#+end_src
-
-** Evil
-
-*** Evil-mode
-
-#+begin_src emacs-lisp :tangle yes
-(use-package evil
-  :straight t
-  :init
-  (setq evil-want-integration t)
-  (setq evil-want-C-u-scroll t)
-  (setq evil-want-keybinding nil)
-  (setq evil-search-module 'evil-search)
-  (setq evil-split-window-below t)
-  (setq evil-vsplit-window-right t)
-  (unless (display-graphic-p)
-    (setq evil-want-C-i-jump nil))
-  :config
-  (evil-mode 1)
-  ;; (setq evil-respect-visual-line-mode t)
-  (evil-set-undo-system 'undo-tree))
-#+end_src
-
-*** evil-surround
-
-#+begin_src emacs-lisp :tangle yes
-(use-package evil-surround
-  :straight t
-  :after evil
-  :config
-  (global-evil-surround-mode 1))
-#+end_src
-
-*** evil-commentary
-
-#+begin_src emacs-lisp :tangle yes
-(use-package evil-commentary
-  :straight t
-  :after evil
-  :config
-  (evil-commentary-mode))
-
-#+end_src
-
-*** evil-quickscope
-
-#+begin_src emacs-lisp :tangle yes
-(use-package evil-quickscope
-  :straight t
-  :after evil
-  :config
-  :hook ((prog-mode . turn-on-evil-quickscope-mode)
-	 (LaTeX-mode . turn-on-evil-quickscope-mode)
-	 (org-mode . turn-on-evil-quickscope-mode)))
-
-#+end_src
-
-*** evil-numbers
-
-#+begin_src emacs-lisp :tangle yes
-(use-package evil-numbers
-  :straight t
-  :commands (evil-numbers/inc-at-pt evil-numbers/dec-at-pt)
-  :init
-  (general-nmap
-    "g+" 'evil-numbers/inc-at-pt
-    "g-" 'evil-numbers/dec-at-pt))
-#+end_src
-
-*** evil-lion
-
-#+begin_src emacs-lisp :tangle yes
-(use-package evil-lion
-  :straight t
-  :config
-  (setq evil-lion-left-align-key (kbd "g a"))
-  (setq evil-lion-right-align-key (kbd "g A"))
-  (evil-lion-mode))
-#+end_src
-
-*** evil-matchit
-
-#+begin_src emacs-lisp :tangle yes
-(use-package evil-matchit
-  :straight t
-  :disabled
-  :config
-  (global-evil-matchit-mode 1))
-
-#+end_src
-
-*** evil-collection
-
-#+begin_src emacs-lisp :tangle yes
-(use-package evil-collection
-  :straight t
-  :after evil
-  :config
-  (evil-collection-init
-   '(eww
-     devdocs
-     proced
-     emms
-     pass
-     calendar
-     dired
-     ivy
-     debug
-     guix
-     calc
-     docker
-     ibuffer
-     geiser
-     pdf
-     info
-     elfeed
-     edebug
-     bookmark
-     company
-     vterm
-     flycheck
-     profiler
-     cider
-     explain-pause-mode
-     notmuch
-     custom
-     xref
-     eshell
-     helpful
-     compile
-     comint
-     git-timemachine
-     magit
-     prodigy
-     slime
-     forge
-     deadgrep
-     vc-annonate
-     telega
-     doc-view)))
-#+end_src
-
-** Avy
-
-#+begin_src emacs-lisp :tangle yes
-(use-package avy
-  :straight t
-  :config
-  (setq avy-timeout-seconds 0.5)
-  (setq avy-ignored-modes
-	'(image-mode doc-view-mode pdf-view-mode exwm-mode))
-  (general-define-key
-   :states '(normal motion)
-   "-" nil
-   "--" #'avy-goto-char-2
-   "-=" #'avy-goto-symbol-1))
-
-(use-package ace-link
-  :straight t
-  :commands (ace-link-info ace-link-help ace-link-woman ace-link-eww))
-#+end_src
-
-
-* Personal Keybindings
-
-** Escape Key
-
-#+begin_src emacs-lisp :tangle yes
-(defun minibuffer-keyboard-quit ()
-  "Abort recursive edit.
-In Delete Selection mode, if the mark is active, just deactivate it;
-then it takes a second \\[keyboard-quit] to abort the minibuffer."
-  (interactive)
-  (if (and delete-selection-mode transient-mark-mode mark-active)
-      (setq deactivate-mark  t)
-    (when (get-buffer "*Completions*") (delete-windows-on "*Completions*"))
-    (abort-recursive-edit)))
-
-(defun my/escape-key ()
-  (interactive)
-  (evil-ex-nohighlight)
-  (keyboard-quit))
-
-(general-define-key
- :keymaps '(normal visual global)
- [escape] #'my/escape-key)
-
-(general-define-key
- :keymaps '(minibuffer-local-map
-	    minibuffer-local-ns-map
-	    minibuffer-local-completion-map
-	    minibuffer-local-must-match-map
-	    minibuffer-local-isearch-map)
- [escape] 'minibuffer-keyboard-quit)
-
-#+end_src
-
-** Home and End
-
-#+begin_src emacs-lisp :tangle yes
-(general-def :states '(normal insert visual)
-  "<home>" 'beginning-of-line
-  "<end>" 'end-of-line)
-#+end_src
-
-** Leader key
-
-#+begin_src emacs-lisp :tangle yes
-(general-create-definer my-leader-def
-  :keymaps 'override
-  :prefix "SPC"
-  :states '(normal motion emacs))
-
-(general-def :states '(normal motion emacs)
-  "SPC" nil
-  "M-SPC" (general-key "SPC"))
-
-(general-def :states '(insert)
-  "M-SPC" (general-key "SPC" :state 'normal))
-
-(my-leader-def "?" 'which-key-show-top-level)
-(my-leader-def "E" 'eval-expression)
-
-(general-def :states '(insert)
-  "<f1> e" #'eval-expression)
-
-(my-leader-def
-  "SPC" '(:wk "second level")
-  "SPC x" '(:wk "ctl-x")
-  "SPC x" ctl-x-map)
-
-(my-leader-def
-  "a" '(:which-key "apps"))
-
-#+end_src
-
-** Universal argument
-
-#+begin_src emacs-lisp :tangle yes
-(general-def
-  :keymaps 'universal-argument-map
-  "M-u" 'universal-argument-more)
-(general-def
-  :keymaps 'override
-  :states '(normal motion emacs insert visual)
-  "M-u" 'universal-argument)
-
-#+end_src
-
-** Profiler
-
-#+begin_src emacs-lisp :tangle yes
-(my-leader-def
-  :infix "P"
-  "" '(:which-key "profiler")
-  "s" 'profiler-start
-  "e" 'profiler-stop
-  "p" 'profiler-report)
-
-#+end_src
-
-** Buffer switching
-
-#+begin_src emacs-lisp :tangle yes
-(general-define-key
-  :keymaps 'override
-  "C-<right>" 'evil-window-right
-  "C-<left>" 'evil-window-left
-  "C-<up>" 'evil-window-up
-  "C-<down>" 'evil-window-down
-  "C-h" 'evil-window-left
-  "C-l" 'evil-window-right
-  "C-k" 'evil-window-up
-  "C-j" 'evil-window-down
-  "C-x h" 'previous-buffer
-  "C-x l" 'next-buffer)
-
-(general-define-key
- :keymaps 'evil-window-map
- "x" 'kill-buffer-and-window
- "d" 'kill-current-buffer)
-
-(winner-mode 1)
-
-(general-define-key
- :keymaps 'evil-window-map
- "u" 'winner-undo
- "U" 'winner-redo)
-#+end_src
-
-** Buffer management
-
-#+begin_src emacs-lisp :tangle yes
-(my-leader-def
-  :infix "b"
-  "" '(:which-key "buffers")
-  "s" '((lambda () (interactive) (switch-to-buffer (persp-scratch-buffer)))
-	:which-key "*scratch*")
-  "m" '((lambda () (interactive) (persp-switch-to-buffer "*Messages*"))
-	:which-key "*Messages*")
-  "l" 'next-buffer
-  "h" 'previous-buffer
-  "k" 'kill-buffer
-  "b" 'persp-ivy-switch-buffer
-  "r" 'revert-buffer
-  "u" 'ibuffer)
-#+end_src
-
-** xref
-
-#+begin_src emacs-lisp :tangle yes
-(general-nmap
-  "gD" 'xref-find-definitions-other-window
-  "gr" 'xref-find-references
-  "gd" 'evil-goto-definition)
-
-(my-leader-def
-  "fx" 'xref-find-apropos)
-
-(use-package xref
-  :straight (:type built-in))
-#+end_src
-
-** Folding
-
-#+begin_src emacs-lisp :tangle yes
-(general-nmap :keymaps '(hs-minor-mode-map outline-minor-mode-map)
-  "ze" 'hs-hide-level
-  "TAB" 'evil-toggle-fold)
-#+end_src
-
-** Zoom UI
-
-#+begin_src emacs-lisp :tangle yes
-(defun my/zoom-in ()
-  "Increase font size by 10 points"
-  (interactive)
-  (set-face-attribute 'default nil
-		      :height
-		      (+ (face-attribute 'default :height) 10)))
-
-(defun my/zoom-out ()
-  "Decrease font size by 10 points"
-  (interactive)
-  (set-face-attribute 'default nil
-		      :height
-		      (- (face-attribute 'default :height) 10)))
-
-;; change font size, interactively
-(global-set-key (kbd "C-+") 'my/zoom-in)
-(global-set-key (kbd "C-=") 'my/zoom-out)
-#+end_src
-
-
-* Editing Text
-
-** Indentation and whitespace
-*** Aggressive indent
-
-#+begin_src emacs-lisp :tangle yes
-(use-package aggressive-indent
-  :commands (aggressive-indent-mode)
-  :straight t)
-#+end_src
-
-*** Delete trailing whitespace
-
-#+begin_src emacs-lisp :tangle yes
-(setq my/trailing-whitespace-modes '(markdown-mode))
-
-(require 'cl-extra)
-
-(add-hook 'before-save-hook
-	  (lambda ()
-	    (unless (cl-some #'derived-mode-p my/trailing-whitespace-modes)
-	      (delete-trailing-whitespace))))
-#+end_src
-
-** Tabs
-
-#+begin_src emacs-lisp :tangle yes
-(setq tab-always-indent nil)
-
-(setq-default default-tab-width 4)
-(setq-default tab-width 4)
-(setq-default evil-indent-convert-tabs nil)
-(setq-default indent-tabs-mode nil)
-(setq-default evil-shift-round nil)
-#+end_src
-
-** Settings
-*** Scrolling
-
-#+begin_src emacs-lisp :tangle yes
-(setq scroll-conservatively scroll-margin)
-(setq scroll-step 1)
-(setq scroll-preserve-screen-position t)
-(setq scroll-error-top-bottom t)
-(setq mouse-wheel-progressive-speed nil)
-(setq mouse-wheel-inhibit-click-time nil)
-#+end_src
-
-*** Clipboard
-
-#+begin_src emacs-lisp :tangle yes
-(setq select-enable-clipboard t)
-(setq mouse-yank-at-point t)
-#+end_src
-
-*** Backups
-
-#+begin_src emacs-lisp :tangle yes
-(setq backup-inhibited t)
-(setq auto-save-default nil)
-#+end_src
-
-#+RESULTS:
-
-** Undo Tree
-
-#+begin_src emacs-lisp :tangle yes
-(use-package undo-tree
-  :straight t
-  :config
-  (global-undo-tree-mode)
-  (setq undo-tree-visualizer-diff t)
-  (setq undo-tree-visualizer-timestamps t)
-  (setq undo-tree-auto-save-history nil)
-
-  (my-leader-def "u" 'undo-tree-visualize)
-  (fset 'undo-auto-amalgamate 'ignore)
-  (setq undo-limit 6710886400)
-  (setq undo-strong-limit 100663296)
-  (setq undo-outer-limit 1006632960))
-#+end_src
-
-** Snippets
-
-#+begin_src emacs-lisp :tangle yes
-(use-package yasnippet-snippets
-  :disabled
-  :straight t)
-
-(use-package yasnippet
-  :straight t
-  :config
-  (setq yas-snippet-dirs
-	`(,(concat (expand-file-name user-emacs-directory) "snippets")
-	  ;; yasnippet-snippets-dir
-	  ))
-  (setq yas-triggers-in-field t)
-  (yas-global-mode 1)
-  (my-leader-def
-    :keymaps 'yas-minor-mode-map
-    :infix "es"
-    "" '(:wk "yasnippet")
-    "n" #'yas-new-snippet
-    "s" #'yas-insert-snippet
-    "v" #'yas-visit-snippet-file))
-
-(general-imap "M-TAB" 'company-yasnippet)
-#+end_src
-
-#+RESULTS:
-
-** Other small packages
-*** smartparens
-
-#+begin_src emacs-lisp :tangle yes
-(use-package smartparens
-  :straight t)
-#+end_src
-
-*** Expand region
-
-#+begin_src emacs-lisp :tangle yes
-(use-package expand-region
-  :straight t
-  :commands (er/expand-region)
-  :init
-  (general-nmap "+" 'er/expand-region))
-#+end_src
-
-*** Visual fill column mode
-
-#+begin_src emacs-lisp :tangle yes
-(use-package visual-fill-column
-  :straight t
-  :commands (visual-fill-column-mode)
-  :config
-  (add-hook 'visual-fill-column-mode-hook
-	    (lambda () (setq visual-fill-column-center-text t))))
-#+end_src
-
-
-* Working with projects
-
-** Projectile
-
-#+begin_src emacs-lisp :tangle yes
-(use-package projectile
-  :straight t
-  :config
-  (projectile-mode +1)
-  (setq projectile-project-search-path '("~/Code" "~/Documents"))
-  (defadvice projectile-project-root (around ignore-remote first activate)
-    (unless (file-remote-p default-directory) ad-do-it)))
-
-(use-package counsel-projectile
-  :after (counsel projectile)
-  :straight t)
-
-(my-leader-def
-  "p" '(:keymap projectile-command-map :which-key "projectile"))
-
-(general-nmap "C-p" 'counsel-projectile-find-file)
-#+end_src
-
-** Git & Magit
-*** magit
-
-#+begin_src emacs-lisp :tangle yes
-(use-package magit
-  :straight t
-  :commands (magit-status magit-file-dispatch)
-  :init
-  (my-leader-def
-    "m" 'magit
-    "M" 'magit-file-dispatch)
-  :config
-  (setq magit-blame-styles
-      '((headings
-	 (heading-format . "%-20a %C %s\n"))
-	(highlight
-	 (highlight-face . magit-blame-highlight))
-	(lines
-	 (show-lines . t)
-	 (show-message . t)))))
-
-#+end_src
-
-*** forge
-
-#+begin_src emacs-lisp :tangle yes
-(use-package forge
-  :after magit
-  :straight t
-  :config
-  (add-to-list 'forge-alist '("gitlab.etu.ru"
-			      "gitlab.etu.ru/api/v4"
-			      "gitlab.etu.ru"
-			      forge-gitlab-repository)))
-
-#+end_src
-
-*** git-gutter
-
-#+begin_src emacs-lisp :tangle yes
-(use-package git-gutter
-  :straight t
-  :if (not my/slow-ssh)
-  :config
-  (global-git-gutter-mode +1))
-#+end_src
-
-*** git-timemachine
-
-#+begin_src emacs-lisp :tangle yes
-(use-package git-timemachine
-  :straight t
-  :commands (git-timemachine))
-
-#+end_src
-
-** Editorconfig
-*** References
-
-#+begin_src emacs-lisp :tangle yes
-(use-package editorconfig
-  :straight t
-  :config
-  (unless my/slow-ssh (editorconfig-mode 1))
-  (add-to-list 'editorconfig-indentation-alist
-	       '(emmet-mode emmet-indentation)))
-
-#+end_src
-
+*** Evil
+*** Avy
+*** Personal Keybindings
+** Editing Text
+*** Indentation & whitespace
+*** Settings
+*** Undo Tree
+*** Snippets
+*** Other Small packages
+** Working with projects
+*** Projectile
+*** Git & Magit
+*** Editorconfig
 *** Editing files
+*** Deadgrep
+** Completion
+*** Ivy, counsel, swiper
+*** ivy-rich
+*** prescient
+*** keybindings
+*** company
+** Help
+** Time trackers
+*** Wakatime
+*** ActivityWatch
 
-#+begin_src emacs-lisp :tangle yes
-(recentf-mode 1)
-(save-place-mode nil)
-#+end_src
+* UI Settings
+** General Settings
+*** Miscellaneous
+*** Line numbers
+*** Word wrapping
+*** Custom frame format
+*** Olivetti
+*** Keycast
+** Themes & colors
+*** Doom themes
+*** Dim inactive buffers
+*** Toggle light/dark
+*** ANSI colors
+** Fonts
+*** Frame font
+*** Other fonts
+*** Ligatures
+*** Icons
+** Text highlight
+** Doom Modeline
+** perspective.el
+*** Functions to manage buffers
+*** Automating perspectives
 
-** Deadgrep
+* Programming
+** General Setup
+*** Treemacs
+*** LSP
+*** Flycheck
+*** Tree Sitter
+*** DAP
+*** Reformatter
+*** copilot
+*** Genral additional config
+** Web Development
+*** Emmet
+*** Prettier
+*** TypeScript
+*** JavaScript
+*** Jest
+*** web-mode
+*** SCSS
+*** PHP
+** LaTeX
+*** AUCTex
+*** Import *.sty
+*** Snippets
+** Markup & natural languages
+*** Markdown
+*** PlantUML
+*** Subtitles
+*** LTex
+*** LanguageTool
+*** Reverso
+** Lisp
+*** Meta Lisp
+*** Emacs Lisp
+*** Common Lisp
+*** Clojure
+*** Hy
+*** Scheme
+*** CLIPS
+** Python
+*** ein
+*** pyright
+*** pipenv
+*** OFF (OFF) yapf
+*** black
+*** isort
+*** sphinx-doc
+*** pytest
+*** code-cells
+*** tensorboard
+** Data Serialization
+*** JSON
+*** CSV
+*** YAML
+** Configuration
+*** .env
+*** .gitignore
+*** Docker
+*** Jenkins
+*** crontab
+*** nginx
+** Shell
+*** sh
+*** zsh
+** Query languages
+*** SQL
+*** SPARQL
+*** GraphQL
+** Documents
+*** DocView
+** x509
+** Java
+** Go
+** .NET
+*** C#
+*** MSBuild
+** nix
+** Lua
 
-#+begin_src emacs-lisp :tangle yes
-(defun my/deadgrep-fix-buffer-advice (fun &rest args)
-  (let ((buf (apply fun args)))
-    (with-current-buffer buf
-      (toggle-truncate-lines 1))
-    buf))
+* Org Mode
+** Installation & basic settings
+*** Encryption
+*** org-contrib
+*** ol-notmuch
+*** org-tempo
+*** evil-org
+** Literate programming
+*** Python & Jupyter
+*** Hy
+*** View HTML in browser
+*** PlantUML
+*** Restclient
+*** Setup
+*** Managing Jupyter kernels
+*** Output post-processing
+*** Executing stuff
+*** Managing a literate programming project
+** Tools
+*** Presentations
+*** TOC
+*** Screenshots
+*** Transclusion
+*** Drawing
+*** Managing tables
+** Productivity & Knowledge management
+*** Org Agenda & Project Management
+*** Org Journal
+*** Bibliography
+*** Org Roam
+*** Review workflow
+*** Contacts
+*** Calendar view
+** UI
+*** OFF (OFF) Instant equations preview
+*** LaTeX fragments
+*** Better headers
+*** Override colors
+** Export
+*** Hugo
+*** Jupyter Notebook
+*** Html export
+*** LaTeX
+** Keybindings& stuff
+*** General keybindings
+*** Copy a link
+*** Navigating source blocks
+*** Open a file from org-directory
 
-(use-package deadgrep
-  :straight t
-  :commands (deadgrep)
-  :config
-  (advice-add #'deadgrep--buffer :around #'my/deadgrep-fix-buffer-advice))
-#+end_src
-
-
-* Utilities
-
-** pass
-
-#+begin_src emacs-lisp :tangle yes
-(use-package pass
-  :straight t
-  :commands (pass)
-  :init
-  (my-leader-def "ak" #'pass)
-  :config
-  (setq pass-show-keybindings nil))
-
-(defun my/password-store-get (entry)
-  (if-let ((res (password-store-get entry)))
-      res
-    (my/password-store-get entry)))
-#+end_src
-
-** Docker
-
-#+begin_src emacs-lisp :tangle yes
-(use-package docker
-  :straight t
-  :if (not (or my/remote-server my/is-termux))
-  :commands (docker)
-  :init
-  (my-leader-def "ao" 'docker))
-
-#+end_src
-
-** Prodigy
-
-#+begin_src emacs-lisp :tangle yes
-(use-package prodigy
-  :straight t
-  :commands (prodigy)
-  :init
-  (my-leader-def "aP" #'prodigy)
-  :config
-  (general-define-key
-   :states '(normal)
-   :keymaps 'prodigy-view-mode-map
-   "C-h" 'evil-window-left
-   "C-l" 'evil-window-right
-   "C-k" 'evil-window-up
-   "C-j" 'evil-window-down))
-
-
-
-
-(defun my/get-apps-on-ports ()
-  (mapcar
-   (lambda (line)
-     (let* ((split (split-string line (rx (| (+ " ") (+ "\t")))))
-	    (process (elt split 6)))
-       `((netid . ,(elt split 0))
-	 (state . ,(elt split 1))
-	 (recv-q . ,(elt split 2))
-	 (send-q . ,(elt split 3))
-	 ,@(let ((data (elt split 4)))
-	     (save-match-data
-	       (string-match (rx (group-n 1 (* nonl)) ":" (group-n 2 (or (+ num) "*"))) data)
-	       `((local-address . ,(match-string 1 data))
-		 (local-port . ,(match-string 2 data)))))
-	 ,@(unless (string-empty-p process)
-	     `((pid . ,(save-match-data
-			 (string-match (rx "pid=" (+ num)) process)
-			 (string-to-number (substring (match-string 0 process) 4)))))))))
-   (seq-filter
-    (lambda (s) (not (string-empty-p s)))
-    (split-string
-     (shell-command-to-string "ss -tulpnH | grep LISTEN") "\n"))))
-
-(defun my/kill-app-on-port (port &optional signal)
-  (let ((apps (my/get-apps-on-ports)))
-    (dolist (app apps)
-      (when (string-equal (cdr (assoc 'local-port app)) port)
-	(signal-process (cdr (assoc 'pid app)) (or signal 15))
-	(message "Sent %d to %d" (or signal 15) (cdr (assoc 'pid app)))))))
-
-#+end_src
-
-** screenshot
-
-#+begin_src emacs-lisp :tangle yes
-(use-package screenshot
-  :straight (:repo "tecosaur/screenshot"
-		   :host github
-		   :build (:not compile))
-  :if (display-graphic-p)
-  :commands (screenshot)
-  :init
-  (my-leader-def "S" 'screenshot))
-#+end_src
-
-** proced
-
-#+begin_src emacs-lisp :tangle yes
-(my-leader-def "ah" 'proced)
-(setq proced-auto-update-interval 1)
-(add-hook 'proced-mode-hook (lambda ()
-			      (visual-line-mode -1)
-			      (setq-local truncate-lines t)
-			      (proced-toggle-auto-update 1)))
-#+end_src
-
-** atomic chrome
-
-#+begin_src emacs-lisp :tangle yes
-(use-package atomic-chrome
-  :commands (atomic-chrome-start-server)
-  :straight t)
-#+end_src
-
-** Pinentry
-
-#+begin_src emacs-lisp :tangle yes
-(use-package pinentry
-  :straight t
-  :config
-  (setenv "GPG_AGENT_INFO" nil) ;; use emacs pinentry
-  (setq auth-source-debug t)
-
-  (setq epg-gpg-program "gpg2") ;; not necessary
-  (require 'epa-file)
-  (epa-file-enable)
-  (setq epa-pinentry-mode 'loopback)
-  (setq epg-pinentry-mode 'loopback)
-  (pinentry-start))
-#+end_src
-
-* Completion
-
-** Ivy, counsel, swiper
-
-#+begin_src emacs-lisp :tangle yes
-(use-package ivy
-  :straight t
-  :config
-  (setq ivy-use-virtual-buffers t)
-  (ivy-mode))
-
-(use-package counsel
-  :straight t
-  :after ivy
-  :config
-  (counsel-mode))
-
-(use-package swiper
-  :defer t
-  :straight t)
-#+end_src
-
-** ivy-rich
-
-#+begin_src emacs-lisp :tangle yes
-(use-package ivy-rich
-  :straight t
-  :after ivy
-  :config
-  (ivy-rich-mode 1)
-  (setcdr (assq t ivy-format-functions-alist) #'ivy-format-function-line))
-#+end_src
-
-** prescient
-
-#+begin_src emacs-lisp :tangle yes
-(use-package ivy-prescient
-  :straight t
-  :after counsel
-  :config
-  (ivy-prescient-mode +1)
-  (setq ivy-prescient-retain-classic-highlighting t)
-  (prescient-persist-mode 1)
-  (setq ivy-prescient-sort-commands
-	'(:not swiper
-	       swiper-isearch
-	       ivy-switch-buffer
-	       ;; ivy-resume
-	       ;; ivy--restore-session
-	       lsp-ivy-workspace-symbol
-	       dap-switch-stack-frame
-	       my/dap-switch-stack-frame
-	       dap-switch-session
-	       dap-switch-thread
-	       counsel-grep
-	       ;; counsel-find-file
-	       counsel-git-grep
-	       counsel-rg
-	       counsel-ag
-	       counsel-ack
-	       counsel-fzf
-	       counsel-pt
-	       counsel-imenu
-	       counsel-yank-pop
-	       counsel-recentf
-	       counsel-buffer-or-recentf
-	       proced-filter-interactive
-	       proced-sort-interactive
-	       perspective-exwm-switch-perspective
-	       my/persp-ivy-switch-buffer-other-window
-	       lsp-execute-code-action
-	       dired-recent-open))
-  ;; Do not use prescient in find-file
-  (ivy--alist-set 'ivy-sort-functions-alist #'read-file-name-internal #'ivy-sort-file-function-default))
-#+end_src
-
-** keybindings
-
-#+begin_src emacs-lisp :tangle yes
-(my-leader-def
-  :infix "f"
-  "" '(:which-key "various completions")'
-  ;; "b" 'counsel-switch-buffer
-  "b" 'persp-ivy-switch-buffer
-  "e" 'conda-env-activate
-  "f" 'project-find-file
-  "c" 'counsel-yank-pop
-  "a" 'counsel-rg
-  "d" 'deadgrep
-  "A" 'counsel-ag)
-
-(general-define-key
- :states '(insert normal)
- "C-y" 'counsel-yank-pop)
-
-(defun my/swiper-isearch ()
-  (interactive)
-  (if current-prefix-arg
-      (swiper-all)
-    (swiper-isearch)))
-
-(my-leader-def "SPC SPC" 'ivy-resume)
-(my-leader-def "s" 'my/swiper-isearch)
-
-(general-define-key
- :keymaps '(ivy-minibuffer-map swiper-map)
- "M-j" 'ivy-next-line
- "M-k" 'ivy-previous-line
- "<C-return>" 'ivy-call
- "M-RET" 'ivy-immediate-done
- [escape] 'minibuffer-keyboard-quit)
-
-#+end_src
-
-** company
-
-#+begin_src emacs-lisp :tangle yes
-(use-package company
-  :straight t
-  :config
-  (global-company-mode)
-  (setq company-idle-delay 0.125)
-  (setq company-dabbrev-downcase nil)
-  (setq company-show-numbers t))
-
-(general-imap "C-SPC" 'company-complete)
-
-(use-package company-box
-  :straight t
-  :if (display-graphic-p)
-  :after (company)
-  :hook (company-mode . company-box-mode))
-#+end_src
-
-
-* Productivity
-
-** pomm
-
-#+begin_src emacs-lisp :tangle yes
-(use-package pomm
-  :straight t
-  ;; :straight (:local-repo "~/Code/Emacs/pomm" :files (:defaults "resources"))
-  :commands (pomm pomm-third-time)
-  :init
-  (my-leader-def "ap" #'pomm-third-time)
-  (setq alert-default-style 'libnotify)
-  :config
-  (pomm-mode-line-mode))
-
-#+end_src
-
-** hledger
-
-#+begin_src emacs-lisp :tangle yes
-(use-package hledger-mode
-  :straight t
-  :mode (rx ".journal" eos)
-  :config
-  (setq hledger-jfile (concat org-directory "/ledger/ledger.journal"))
-  (add-hook 'hledger-mode-hook
-	    (lambda ()
-	      (make-local-variable 'company-backends)
-	      (add-to-list 'company-backends 'hledger-company))))
-
-(use-package flycheck-hledger
-  :straight t
-  :after (hledger-mode))
-#+end_src
-
-** Calendar
-
-#+begin_src emacs-lisp :tangle yes
-(setq calendar-date-style 'iso) ;; YYYY/mm/dd
-(setq calendar-week-start-day 1)
-(setq calendar-time-display-form '(24-hours ":" minutes))
-
-(setq calendar-latitude 59.9375)
-(setq calendar-longitude 30.308611)
-#+end_src
+* Applications
+** Dired
+** Shells
+** Managing dotfiles
+** Elfeed
+** Reading Documentation
+** Utilities
+** Productivity
+** Fun

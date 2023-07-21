@@ -1,8 +1,6 @@
 #!/bin/bash
 
-#!/bin/bash
-
-cd && cd AUR && git clone https://aur.archlinux.org/yay-bin.git
+cd && git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si -r && cd
 
