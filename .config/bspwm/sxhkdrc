@@ -16,8 +16,9 @@ super + shift + Escape
 super + Return
   st
 
+# negative -w arg to account for a border width (default: 100%)
 super + shift + Return
-	bspterm --float
+    tdrop -ma -w -4 -y "$PANEL_HEIGHT" -s dropdown st
 
 ### Launch menu
 super + d
@@ -139,6 +140,9 @@ super + {_,shift + }{1-6}
 super + minus
     bspc monitor -f next
 
+# jgmenu
+~button3
+  xqp 0 $(xdo id -N Bspwm -n root) && jgmenu_run
 
 #############################
 ### S C R A T C H P A D S ###

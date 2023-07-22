@@ -75,6 +75,13 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Emacs state=tiled
 bspc rule -a kitty-float state=floating
+bspc rule -a tsp state=floating
+bspc rule -a tsp2 state=floating 
+bspc rule -a ranger state=floating
+bspc rule -a vifm state=floating
+bspc rule -a lvim state=floating
+
+
 
 #  ┬  ┌─┐┬ ┬┌┐┌┌─┐┬ ┬┌─┐┬─┐
 #  │  ├─┤│ │││││  ├─┤├┤ ├┬┘

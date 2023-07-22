@@ -2125,3 +2125,928 @@ INFO     2023-07-20 21:58:49,688 [syncwork:pause_tree:757] Paused tree: /home/ah
 INFO     2023-07-20 21:58:49,688 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
 INFO     2023-07-20 21:58:49,688 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
 ERROR    2023-07-20 21:58:49,689 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+** (process:1424): WARNING **: 02:56:41.769: Failed to load shared library 'libnotify.so.4' referenced by the typelib: /usr/lib/libgdk_pixbuf-2.0.so.0: undefined symbol: g_task_set_name
+INFO     2023-07-22 02:56:42,314 [mainlogs:_log_run:138] Core(app_version=3.8.6.50504, platform=Linux-x86_64-arch/) initialized
+WARNING  2023-07-22 02:56:42,317 [base_events:_run_once:1782] Executing <Task pending coro=<init() running at ideskcore/core.py:28> wait_for=<Task pending coro=<SettingsMain._load_settings() running at ideskcore/mainsettings.py:186> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, <TaskWakeupMethWrapper object at 0x7f9286b50590>()] created at ideskcore/mainsettings.py:160> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, _chain_future.<locals>._call_set_state() at asyncio/futures.py:358] created at asyncio/events.py:88> took 0.545 seconds
+INFO     2023-07-22 02:56:42,326 [mainsettings:_load_settings:236] Loaded settings, machine fingerprint = ZNCzTpphh_y8G14jtR4OvtVe3eU=
+/usr/lib/gvfs/libgvfscommon.so: undefined symbol: g_task_set_static_name
+Failed to load module: /usr/lib/gio/modules/libgvfsdbus.so
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.374: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 02:56:44,374 [inotify_manager:__init__:132] INotifyManager FS_ENCODING: utf-8
+INFO     2023-07-22 02:56:44,375 [fswatcher:_start:57] LinuxFSWatcher._start
+INFO     2023-07-22 02:56:44,375 [inotify_manager:_pull_loop:315] Inotify loop enter
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/05-reset-dirs-sample.conf", line 6: unknown element "reset-dirs"
+INFO     2023-07-22 02:56:44,772 [fswatcher:watch:77] watch origin: /home/ahsan/gdrivew
+INFO     2023-07-22 02:56:44,774 [app:start_core:65] core started
+INFO     2023-07-22 02:56:44,775 [unix_socket_server:start:106] unix socket server thread start
+INFO     2023-07-22 02:56:44,775 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 02:56:44,776 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 02:56:44,779 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+ERROR    2023-07-22 02:56:44,780 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.784: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.922: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.922: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.923: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.924: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.924: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.925: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.925: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.926: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.926: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.927: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.928: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.928: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.929: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.929: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.930: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.930: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.931: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.931: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.932: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.932: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.933: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.933: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.934: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.934: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.935: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.935: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.936: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.936: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.937: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.937: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.938: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.938: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.939: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.939: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.940: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.940: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.941: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.941: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.942: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.942: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.943: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.944: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.944: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.945: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1424): GLib-GIO-CRITICAL **: 02:56:44.945: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+** (process:1434): WARNING **: 02:58:57.378: Failed to load shared library 'libnotify.so.4' referenced by the typelib: /usr/lib/libgdk_pixbuf-2.0.so.0: undefined symbol: g_task_set_name
+INFO     2023-07-22 02:58:57,773 [mainlogs:_log_run:138] Core(app_version=3.8.6.50504, platform=Linux-x86_64-arch/) initialized
+WARNING  2023-07-22 02:58:57,778 [base_events:_run_once:1782] Executing <Task pending coro=<init() running at ideskcore/core.py:28> wait_for=<Task pending coro=<SettingsMain._load_settings() running at ideskcore/mainsettings.py:186> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, <TaskWakeupMethWrapper object at 0x7fba4d78cf90>()] created at ideskcore/mainsettings.py:160> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, _chain_future.<locals>._call_set_state() at asyncio/futures.py:358] created at asyncio/events.py:88> took 0.396 seconds
+INFO     2023-07-22 02:58:57,788 [mainsettings:_load_settings:236] Loaded settings, machine fingerprint = ZNCzTpphh_y8G14jtR4OvtVe3eU=
+/usr/lib/gvfs/libgvfscommon.so: undefined symbol: g_task_set_static_name
+Failed to load module: /usr/lib/gio/modules/libgvfsdbus.so
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.264: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 02:58:59,265 [inotify_manager:__init__:132] INotifyManager FS_ENCODING: utf-8
+INFO     2023-07-22 02:58:59,265 [fswatcher:_start:57] LinuxFSWatcher._start
+INFO     2023-07-22 02:58:59,266 [inotify_manager:_pull_loop:315] Inotify loop enter
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/05-reset-dirs-sample.conf", line 6: unknown element "reset-dirs"
+INFO     2023-07-22 02:58:59,359 [fswatcher:watch:77] watch origin: /home/ahsan/gdrivew
+INFO     2023-07-22 02:58:59,361 [app:start_core:65] core started
+INFO     2023-07-22 02:58:59,362 [unix_socket_server:start:106] unix socket server thread start
+INFO     2023-07-22 02:58:59,363 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 02:58:59,363 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 02:58:59,367 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+ERROR    2023-07-22 02:58:59,368 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.372: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.500: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.500: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.500: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.501: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.501: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.501: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.501: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.501: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.502: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.502: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.502: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.503: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.503: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.503: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.503: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.504: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.504: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.504: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.504: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.505: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.505: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.505: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.505: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.506: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.506: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.506: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.506: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.506: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.507: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.507: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.507: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.507: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.508: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.508: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.508: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.508: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.508: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.509: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.509: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.509: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.509: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.510: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.510: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.510: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1434): GLib-GIO-CRITICAL **: 02:58:59.510: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+** (process:1435): WARNING **: 03:01:22.344: Failed to load shared library 'libnotify.so.4' referenced by the typelib: /usr/lib/libgdk_pixbuf-2.0.so.0: undefined symbol: g_task_set_name
+INFO     2023-07-22 03:01:22,729 [mainlogs:_log_run:138] Core(app_version=3.8.6.50504, platform=Linux-x86_64-arch/) initialized
+WARNING  2023-07-22 03:01:22,733 [base_events:_run_once:1782] Executing <Task pending coro=<init() running at ideskcore/core.py:28> wait_for=<Task pending coro=<SettingsMain._load_settings() running at ideskcore/mainsettings.py:186> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, <TaskWakeupMethWrapper object at 0x7f00121cf850>()] created at ideskcore/mainsettings.py:160> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, _chain_future.<locals>._call_set_state() at asyncio/futures.py:358] created at asyncio/events.py:88> took 0.385 seconds
+INFO     2023-07-22 03:01:22,741 [mainsettings:_load_settings:236] Loaded settings, machine fingerprint = ZNCzTpphh_y8G14jtR4OvtVe3eU=
+/usr/lib/gvfs/libgvfscommon.so: undefined symbol: g_task_set_static_name
+Failed to load module: /usr/lib/gio/modules/libgvfsdbus.so
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.521: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 03:01:24,521 [inotify_manager:__init__:132] INotifyManager FS_ENCODING: utf-8
+INFO     2023-07-22 03:01:24,522 [fswatcher:_start:57] LinuxFSWatcher._start
+INFO     2023-07-22 03:01:24,522 [inotify_manager:_pull_loop:315] Inotify loop enter
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/05-reset-dirs-sample.conf", line 6: unknown element "reset-dirs"
+INFO     2023-07-22 03:01:24,592 [fswatcher:watch:77] watch origin: /home/ahsan/gdrivew
+INFO     2023-07-22 03:01:24,593 [app:start_core:65] core started
+INFO     2023-07-22 03:01:24,594 [unix_socket_server:start:106] unix socket server thread start
+INFO     2023-07-22 03:01:24,594 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:01:24,595 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:01:24,598 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+ERROR    2023-07-22 03:01:24,599 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.602: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.731: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.731: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.732: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.732: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.732: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.732: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.732: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.733: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.733: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.733: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.733: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.734: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.734: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.734: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.734: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.735: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.735: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.735: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.735: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.736: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.736: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.736: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.736: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.737: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.737: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.737: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.737: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.737: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.738: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.738: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.738: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.738: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.738: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.739: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.739: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.739: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.739: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.740: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.740: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.740: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.740: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.740: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.741: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.741: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1435): GLib-GIO-CRITICAL **: 03:01:24.741: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+** (process:1438): WARNING **: 03:03:56.201: Failed to load shared library 'libnotify.so.4' referenced by the typelib: /usr/lib/libgdk_pixbuf-2.0.so.0: undefined symbol: g_task_set_name
+INFO     2023-07-22 03:03:56,862 [mainlogs:_log_run:138] Core(app_version=3.8.6.50504, platform=Linux-x86_64-arch/) initialized
+WARNING  2023-07-22 03:03:56,867 [base_events:_run_once:1782] Executing <Task pending coro=<init() running at ideskcore/core.py:28> wait_for=<Task pending coro=<SettingsMain._load_settings() running at ideskcore/mainsettings.py:186> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, <TaskWakeupMethWrapper object at 0x7f8f8198f750>()] created at ideskcore/mainsettings.py:160> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, _chain_future.<locals>._call_set_state() at asyncio/futures.py:358] created at asyncio/events.py:88> took 0.662 seconds
+INFO     2023-07-22 03:03:56,875 [mainsettings:_load_settings:236] Loaded settings, machine fingerprint = ZNCzTpphh_y8G14jtR4OvtVe3eU=
+/usr/lib/gvfs/libgvfscommon.so: undefined symbol: g_task_set_static_name
+Failed to load module: /usr/lib/gio/modules/libgvfsdbus.so
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.101: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 03:03:59,101 [inotify_manager:__init__:132] INotifyManager FS_ENCODING: utf-8
+INFO     2023-07-22 03:03:59,101 [fswatcher:_start:57] LinuxFSWatcher._start
+INFO     2023-07-22 03:03:59,102 [inotify_manager:_pull_loop:315] Inotify loop enter
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/05-reset-dirs-sample.conf", line 6: unknown element "reset-dirs"
+INFO     2023-07-22 03:03:59,176 [fswatcher:watch:77] watch origin: /home/ahsan/gdrivew
+INFO     2023-07-22 03:03:59,178 [app:start_core:65] core started
+INFO     2023-07-22 03:03:59,179 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:03:59,179 [unix_socket_server:start:106] unix socket server thread start
+INFO     2023-07-22 03:03:59,179 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:03:59,183 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+ERROR    2023-07-22 03:03:59,184 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.188: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.316: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.317: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.317: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.317: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.318: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.318: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.318: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.318: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.318: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.319: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.319: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.319: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.319: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.320: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.320: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.320: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.320: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.321: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.321: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.321: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.321: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.322: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.322: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.322: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.322: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.322: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.323: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.323: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.323: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.323: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.324: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.324: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.324: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.324: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.324: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.325: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.325: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.325: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.325: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.326: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.326: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.326: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.326: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.326: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1438): GLib-GIO-CRITICAL **: 03:03:59.327: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+** (process:1481): WARNING **: 03:07:15.095: Failed to load shared library 'libnotify.so.4' referenced by the typelib: /usr/lib/libgdk_pixbuf-2.0.so.0: undefined symbol: g_task_set_name
+INFO     2023-07-22 03:07:15,582 [mainlogs:_log_run:138] Core(app_version=3.8.6.50504, platform=Linux-x86_64-arch/) initialized
+WARNING  2023-07-22 03:07:15,585 [base_events:_run_once:1782] Executing <Task pending coro=<init() running at ideskcore/core.py:28> wait_for=<Task pending coro=<SettingsMain._load_settings() running at ideskcore/mainsettings.py:186> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, <TaskWakeupMethWrapper object at 0x7fc57abd2190>()] created at ideskcore/mainsettings.py:160> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, _chain_future.<locals>._call_set_state() at asyncio/futures.py:358] created at asyncio/events.py:88> took 0.487 seconds
+INFO     2023-07-22 03:07:15,593 [mainsettings:_load_settings:236] Loaded settings, machine fingerprint = ZNCzTpphh_y8G14jtR4OvtVe3eU=
+/usr/lib/gvfs/libgvfscommon.so: undefined symbol: g_task_set_static_name
+Failed to load module: /usr/lib/gio/modules/libgvfsdbus.so
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.615: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 03:07:17,615 [inotify_manager:__init__:132] INotifyManager FS_ENCODING: utf-8
+INFO     2023-07-22 03:07:17,616 [fswatcher:_start:57] LinuxFSWatcher._start
+INFO     2023-07-22 03:07:17,616 [inotify_manager:_pull_loop:315] Inotify loop enter
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/05-reset-dirs-sample.conf", line 6: unknown element "reset-dirs"
+INFO     2023-07-22 03:07:17,710 [fswatcher:watch:77] watch origin: /home/ahsan/gdrivew
+INFO     2023-07-22 03:07:17,711 [app:start_core:65] core started
+INFO     2023-07-22 03:07:17,712 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:07:17,712 [unix_socket_server:start:106] unix socket server thread start
+INFO     2023-07-22 03:07:17,713 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:07:17,716 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+ERROR    2023-07-22 03:07:17,717 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.720: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.851: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.851: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.851: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.852: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.852: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.852: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.852: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.853: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.853: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.853: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.853: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.854: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.854: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.854: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.854: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.855: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.855: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.855: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.855: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.856: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.856: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.856: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.856: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.856: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.857: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.857: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.857: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.857: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.858: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.858: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.858: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.858: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.858: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.859: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.859: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.859: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.859: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.860: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.860: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.860: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.860: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.860: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.861: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.861: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1481): GLib-GIO-CRITICAL **: 03:07:17.861: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+** (process:1466): WARNING **: 03:14:23.274: Failed to load shared library 'libnotify.so.4' referenced by the typelib: /usr/lib/libgdk_pixbuf-2.0.so.0: undefined symbol: g_task_set_name
+INFO     2023-07-22 03:14:23,650 [mainlogs:_log_run:138] Core(app_version=3.8.6.50504, platform=Linux-x86_64-arch/) initialized
+WARNING  2023-07-22 03:14:23,654 [base_events:_run_once:1782] Executing <Task pending coro=<init() running at ideskcore/core.py:28> wait_for=<Task pending coro=<SettingsMain._load_settings() running at ideskcore/mainsettings.py:186> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, <TaskWakeupMethWrapper object at 0x7ff1b858e790>()] created at ideskcore/mainsettings.py:160> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, _chain_future.<locals>._call_set_state() at asyncio/futures.py:358] created at asyncio/events.py:88> took 0.376 seconds
+INFO     2023-07-22 03:14:23,663 [mainsettings:_load_settings:236] Loaded settings, machine fingerprint = ZNCzTpphh_y8G14jtR4OvtVe3eU=
+/usr/lib/gvfs/libgvfscommon.so: undefined symbol: g_task_set_static_name
+Failed to load module: /usr/lib/gio/modules/libgvfsdbus.so
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.752: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 03:14:25,752 [inotify_manager:__init__:132] INotifyManager FS_ENCODING: utf-8
+INFO     2023-07-22 03:14:25,753 [fswatcher:_start:57] LinuxFSWatcher._start
+INFO     2023-07-22 03:14:25,753 [inotify_manager:_pull_loop:315] Inotify loop enter
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/05-reset-dirs-sample.conf", line 6: unknown element "reset-dirs"
+INFO     2023-07-22 03:14:25,834 [app:start_core:65] core started
+INFO     2023-07-22 03:14:25,835 [fswatcher:watch:77] watch origin: /home/ahsan/gdrivew
+INFO     2023-07-22 03:14:25,835 [unix_socket_server:start:106] unix socket server thread start
+INFO     2023-07-22 03:14:25,839 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:14:25,839 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:14:25,840 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+ERROR    2023-07-22 03:14:25,840 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.844: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.971: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.971: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.971: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.972: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.972: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.972: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.972: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.972: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.973: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.973: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.973: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.973: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.974: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.974: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.974: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.974: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.975: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.975: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.975: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.975: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.976: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.976: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.976: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.976: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.977: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.977: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.977: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.977: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.977: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.978: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.978: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.978: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.978: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.978: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.979: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.979: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.979: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.979: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.980: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.980: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.980: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.980: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.980: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.981: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:14:25.981: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.074: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 03:29:03,074 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:29:03,074 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 03:29:03,075 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:29:03,075 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.076: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.077: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.084: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.084: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.084: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.085: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.085: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.085: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.086: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.086: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.086: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.086: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.087: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.087: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.087: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.087: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.087: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.088: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.088: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.088: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.089: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.089: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.089: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.089: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.089: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.090: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.090: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.090: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.090: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.102: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.103: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.107: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.128: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.201: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.203: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.205: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.208: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.208: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.208: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.209: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.209: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.209: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.210: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.214: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.215: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 03:29:03,215 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 03:29:03,216 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 03:29:03.216: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 03:29:03,216 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:29:03,216 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 03:29:03,217 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:29:03,217 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 03:29:03,217 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 03:29:03,217 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 03:54:59.985: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 03:54:59,986 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:54:59,986 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 03:54:59,989 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 03:54:59,990 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 03:54:59,993 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 03:54:59,995 [platui_impl:display_notification:82] Cannot initialize notifications.
+INFO     2023-07-22 04:14:27,940 [licensework:_do:95] License received: License{'subscriptions': [BaseLicense.Subscription{'code': 'prime', 'is_recurring': False, 'name': 'Prime', 'capabilities': ['ignore_rules', 'shared', 'network_drives'], 'expiry': None}], 'user_id': '102423699662640011641', 'email': 'ahsanur@ualberta.ca', 'can_activate_backup_trial': False}
+
+(process:1466): GLib-GIO-CRITICAL **: 04:56:54.109: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:56:54,109 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:56:54,110 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:56:54,110 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:56:54,110 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:56:54,111 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:56:54,111 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:56:54.144: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:56:54,144 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:56:54,145 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:56:54,145 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:56:54,145 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:56:54,146 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:56:54,147 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:56:54.148: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:56:54,148 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:56:54,148 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:56:54,148 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:56:54,148 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:56:54,148 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:56:54,149 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:00.488: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:00,488 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:00,488 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:00,489 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:00,489 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:00,490 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:00,490 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:00.491: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:00,491 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:00,491 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:00,493 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:00,493 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:00,493 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:00,494 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:02.791: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:02,791 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:02,791 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:02,792 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:02,794 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:02,795 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:02,796 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:02.797: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:02,797 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:02,797 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:02,797 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:02,798 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:02,798 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:02,798 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:06.871: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:06,871 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:06,871 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:06,872 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:06,872 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:06,873 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:06,874 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:06.875: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:06,875 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:06,875 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:06,876 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:06,876 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:06,876 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:06,876 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:09.076: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:09,076 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:09,076 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:09,077 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:09,077 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:09,078 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:09,078 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:09.079: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:09,079 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:09,079 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:09,082 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:09,082 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:09,082 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:09,083 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:14.013: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:14,013 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:14,013 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:14,014 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:14,014 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:14,015 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:14,016 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:14.016: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:14,016 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:14,017 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:14,017 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:14,017 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:14,018 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:14,018 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:16.079: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:16,079 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:16,079 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:16,079 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:16,080 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:16,080 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:16,082 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:16.083: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:16,083 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:16,083 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:16,083 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:16,083 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:16,084 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:16,084 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:17.387: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:17,387 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:17,387 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:17,388 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:17,388 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:17,389 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:17,390 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:1466): GLib-GIO-CRITICAL **: 04:57:17.391: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2023-07-22 04:57:17,391 [syncwork:pause_tree:732] Pausing tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:17,391 [syncwork:pause_tree:737] Cancelling LocateMissingOrigin(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:17,391 [syncwork:pause_tree:757] Paused tree: /home/ahsan/gdrivew
+INFO     2023-07-22 04:57:17,391 [syncwork:add_prompt:449] Prompt added: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew'))
+INFO     2023-07-22 04:57:17,391 [syncwork:_finish_prompt:391] Prompt done: MissingOriginInfoPrompt(node_id=-1, origin_path=PurePosixPath('/home/ahsan/gdrivew')) chosen option=Cancelled before choice
+ERROR    2023-07-22 04:57:17,392 [platui_impl:display_notification:82] Cannot initialize notifications.
+INFO     2023-07-22 05:16:07,735 [cloudclient:_request:159] Retrying due to server error: InternalServerError('500: internalError: Internal Error')
+js: ResizeObserver loop limit exceeded
