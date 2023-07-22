@@ -1,7 +1,7 @@
 st.font:         JetBrainsMono Nerd Font:style:medium:pixelsize=28
 
 ! window padding
-st.borderpx: 8
+st.borderpx: 10
 
 !- 0.1 to 0.9 = transparency
 st.alpha: 0.95

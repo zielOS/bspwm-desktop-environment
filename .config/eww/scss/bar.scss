@@ -1,175 +1,175 @@
-window > .bar {
-  margin: 1rem;
-  box-shadow: 0 0 4px 1px rgba(black, 0.5);
-  background-color: $bg;
-}
-
 .bar {
   font-family: "SF Pro", "Font Awesome 6 Pro Solid";
-  font-size: 1.4rem;
-  background-color: transparent;
-  padding: 1rem 0.4rem;
-  border-radius: 1rem;
+  background-color: $bg;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 
-  .launcher {
+  .group,
+  .layout-button-box,
+  .workspaces,
+  .notification-icon-box {
+    background-color: $bg-alt;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border-radius: 0.6rem;
+  }
+
+  .power-icon,
+  .focused,
+  .updates-icon,
+  .network-icon,
+  .volume-icon,
+  .notification-icon {
     font-size: 1.4rem;
-    color: $blue;
+  }
+
+  .updates-text,
+  .network-text {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .power-icon {
+    color: $red;
+    margin-top: 0.1rem;
 
     &:hover {
-      color: darken($color: $blue, $amount: 10%);
+      color: darken($color: $red, $amount: 10%);
+    }
+  }
+
+  .layout-button {
+    font-size: 1.6rem;
+    color: $fg;
+    background-color: $bg-alt;
+
+    &:hover {
+      color: lighten($color: $cyan, $amount: 2%);
     }
   }
 
   .workspaces {
-    background-color: $bg-alt;
-    padding: 1rem 0;
-    border-radius: 1rem;
+    font-size: 1rem;
 
-    button {
-      &.empty {
-        color: $black;
-      }
+    .focused {
+      color: $green;
+    }
 
-      &.occupied {
-        color: lighten($color: $black, $amount: 10%);
-      }
-
-      &.current {
-        color: $green;
-      }
+    .occupied {
+      color: lighten($color: $black, $amount: 15%);
 
       &:hover {
-        &.empty {
-          color: lighten($color: $black, $amount: 5%);
-        }
-        &.occupied {
-          color: lighten($color: $black, $amount: 20%);
-        }
-        &.current {
-          color: darken($color: $green, $amount: 10%);
-        }
+        color: rgba($green, 0.5);
       }
     }
-  }
 
-  .music {
-    &.cover {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      min-height: 2.7rem;
-      min-width: 2.7rem;
-      border-radius: 100%;
-      box-shadow: 0 0 3px 1px rgba(black, 0.5);
-      margin-bottom: 5px;
-    }
-
-    &.toggle {
-      font-size: 1.5rem;
-    }
-
-    &.previous,
-    &.next {
-      font-size: 1.2rem;
-    }
-
-    button {
-      color: $fg;
+    .empty {
+      color: $black;
 
       &:hover {
-        color: $magenta;
+        color: lighten($color: $black, $amount: 6%);
       }
+    }
+
+    .urgent {
+      color: $green;
     }
   }
 
-  .forecast {
-    margin-bottom: 0.2rem;
+  .windowtitle {
+    font-size: 1rem;
+    font-weight: 500;
   }
 
-  .group {
-    background-color: $bg-alt;
-    padding: 0.8rem 0 1rem;
+  .updates-icon {
+    margin-top: -.1rem;
+    font-size: 1.55rem;
+    color: $yellow;
+  }
+
+  .updates-text {
+    margin-left: 0.3rem;
+  }
+
+  .volume-bar trough highlight {
+    background: $green;
     border-radius: 1rem;
+  }
 
-    .bell {
-      padding-top: 0.2rem;
+  .volume-bar scale trough {
+    all: unset;
+    background-color: $black;
+    border-radius: 1rem;
+    min-height: 0.3rem;
+    min-width: 5rem;
+    margin-left: 0.3rem;
+    box-shadow: 0px 0px 2px 1px rgba(black, 0.3);
+  }
 
-      &.icon {
-        color: $fg-alt;
-      }
+  .network-text {
+    color: $fg;
+    margin-left: 0.3rem;
+  }
 
-      &.indicator {
-        font-size: 0.8rem;
-        color: $yellow;
-        margin-top: -5px;
-        text-shadow: 0 1px 2px black;
-      }
-    }
+  .notification-icon {
+    color: $fg;
+  }
 
-    .updates {
-      &.icon {
-        color: $yellow;
-      }
-
-      &.total {
-        font-size: 0.9rem;
-        font-weight: bold;
-        margin-bottom: 0.2rem;
-      }
-    }
-
-    .network {
-      //
-    }
-
-    .volume {
-      .volume-bar scale trough {
-        all: unset;
-        background-color: $black;
-        border-radius: 1rem;
-        min-width: 0.4rem;
-        min-height: 3rem;
-        margin-bottom: 0.5rem;
-        box-shadow: 0 0 2px 1px rgba(black, 0.3);
-      }
-
-      .volume-bar scale trough highlight {
-        all: unset;
-        background: $green;
-        border-radius: 1rem;
-      }
-    }
+  .notification-count {
+    font-family: SF Mono;
+    color: $fg-alt;
+    font-weight: bold;
   }
 
   .clock {
-    font-family: Juminai;
+    font-family: SF Mono;
 
-    &.hour {
+    .clock-hour {
+      font-size: 1.2rem;
       font-weight: bold;
       color: $fg;
     }
 
-    &.minute {
+    .clock-minute {
+      font-size: 1.2rem;
       color: $fg-alt;
     }
 
-    &.separator {
+    .clock-separator {
+      font-size: 1.2rem;
       color: $fg-alt;
+      margin-top: -0.1rem;
     }
-    .timebox {
-      font-size: 0.5rem;
+  }
 
-      &.magenta {
-        color: $magenta;
-      }
+  .musicbar-art {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 2.6rem;
+    border-radius: 2rem;
+  }
 
-      &.green {
-        color: $green;
-      }
+  .musicbar-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: $fg;
+  }
 
-      &.yellow {
-        color: $yellow;
-      }
+  .musicbar-toggle-icon {
+    font-size: 1.25rem;
+  }
+
+  .musicbar-previous-icon,
+  .musicbar-next-icon {
+    font-size: 1rem;
+  }
+
+  .musicbar-previous-icon,
+  .musicbar-next-icon,
+  .musicbar-toggle-icon {
+    color: $fg;
+
+    &:hover {
+      color: $magenta;
     }
   }
 }

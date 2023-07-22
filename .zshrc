@@ -50,5 +50,3 @@ export NVM_DIR="$HOME/.nvm"
 # fnm
 export PATH="/home/ahsan/.local/share/fnm:$PATH"
 eval "`fnm env`"
-
-

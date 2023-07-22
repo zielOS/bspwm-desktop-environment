@@ -1,6 +1,0 @@
-(defwindow volume
-  :monitor 0
-  :stacking "overlay"
-  :geometry (geometry :width "10%" :anchor "top center")
-  (volume-popup)
-)
