@@ -53,6 +53,6 @@
   "ultisnips": { "branch": "master", "commit": "0ad238b1910d447476b2d98f593322c1cdb71285" },
   "vim-illuminate": { "branch": "master", "commit": "a2907275a6899c570d16e95b9db5fd921c167502" },
   "vim-shellcheck": { "branch": "master", "commit": "4346419ac57ef341a15aa39c827c0848f17c6faf" },
-  "vimtex": { "branch": "master", "commit": "95579267d48a6b4e8e99c4f32456cba992565ea2" },
+  "vimtex": { "branch": "master", "commit": "53464eb5df497eb015da773f7a309e3bf2dfa16e" },
   "which-key.nvim": { "branch": "main", "commit": "4acffc92953a90a790603bfdab7c92319ab167b1" }
 }

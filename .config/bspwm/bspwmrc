@@ -13,8 +13,9 @@ export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export GDK_SCALE=1.8
 export GDK_DPI_SCALE=1.5
+export ELM_SCALE=1.5
 export QT_QPA_PLATFORMTHEME=qt5ct
-export PATH=$PATH:$HOME/.config/bspwm/scripts
+export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.config/emacs/bin
 export PATH=$PATH:$HOME/.npm-global/bin
@@ -127,7 +128,9 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 ## Launch apps
 ckb-next &
 insync start &
-gammastep &
+
+# setup display settings
+gammastep -l 48.1:11.6 -b 0.9:0.9 -t 5700:5700 &
 
 # Launch the bar and or eww widgets
 #eww daemon &

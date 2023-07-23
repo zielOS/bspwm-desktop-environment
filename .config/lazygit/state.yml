@@ -1,6 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/ahsan/bspwm-desktop-environment
+    - /home/ahsan/git-repos
 startuppopupversion: 5
 customcommandshistory:
     - q
