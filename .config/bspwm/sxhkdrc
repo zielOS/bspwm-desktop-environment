@@ -18,7 +18,7 @@ super + Return
 
 # negative -w arg to account for a border width (default: 100%)
 super + shift + Return
-    tdrop -ma -w -4 -y "$PANEL_HEIGHT" -s dropdown st
+	bspc rule -a st -o state=floating follow=on center=true rectangle=490x310+0+0 && st
 
 ### Launch menu
 super + d
@@ -125,11 +125,11 @@ super + space
   bspc node -t "~"{floating,tiled}
 
 # hide window
-super + e
+super + w
 	bspc node -g hidden
 
 # unhide window
-super + shift + e
+super + shift + w
 	bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
 
 
@@ -148,6 +148,32 @@ super + minus
 ### S C R A T C H P A D S ###
 #############################
 
-super + shift + s; {t, shift + t, r, v, l}
+super + s; {t, shift + t, r, v, l}
 	bspscratchpad { tsp, tsp2, ranger, vifm, lvim }
+
+
+
+
+#################
+### E M A C S ###
+#################
+
+super + e; e
+    emacsclient -c -a 'emacs'
+super + e; a
+    emacsclient -c -a 'emacs' --eval '(emms)' --eval '(emms-play-directory-tree \"~/Music/\")'
+super + e; b
+    emacsclient -c -a 'emacs' --eval '(ibuffer)'
+super + e; d
+    emacsclient -c -a 'emacs' --eval '(dired nil)'
+super + e; i
+    emacsclient -c -a 'emacs' --eval '(erc)'
+super + e; n
+    emacsclient -c -a 'emacs' --eval '(elfeed)'
+super + e; s
+    emacsclient -c -a 'emacs' --eval '(eshell)'
+super + e; v
+    emacsclient -c -a 'emacs' --eval '(+vterm/here nil)'
+super + e; w
+    emacsclient -c -a 'emacs' --eval '(doom/window-maximize-buffer(eww "distro.tube"))'
 
