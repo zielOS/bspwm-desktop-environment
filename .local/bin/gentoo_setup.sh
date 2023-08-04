@@ -217,7 +217,7 @@ genkernel --luks --menuconfig --install all
 ** miscellenous apps
 grub-install --target=x86_64-efi --efi-directory=/boot && grub-install --target=x86_64-efi --efi-directory=/boot --removable && grub-mkconfig -o /boot/grub/grub.cfg
 
-emerge -av --jobs=10  app-arch/unzip app-arch/zip app-arch/unrar sys-fs/btrfs-progs sys-fs/dosfstools net-misc/wget net-misc/curl app-misc/ckb app-admin/sudo app-text/zathura app-text/zathura-meta dev-python/pynvim app-editors/neovim sys-apps/ripgrep dev-util/tree-sitter-cli sys-apps/fd app-shells/zsh app-shells/zsh-completions app-shells/gentoo-zsh-completions app-shells/zoxide app-shells/fzf dev-vcs/lazygit x11-misc/rofi x11-misc/dunst app-forensics/aide sys-apps/rng-tools sys-apps/haveged app-forensics/lynis sys-process/audit app-admin/sysstat sys-process/acct sys-boot/grub sys-apps/mlocate app-misc/tmux x11-themes/papirus-icon-theme x11-misc/jgmenu app-portage/smart-live-rebuild app-portage/gentoolkit media-fonts/nerd-fonts net-im/discord app-text/xournalpp sys-power/power-profiles-daemon app-admin/stow x11-terms/kitty x11-terms/kitty-terminfo x11-terms/kitty-shell-integration app-misc/ranger app-misc/vifm sys-apps/apparmor sys-apps/apparmor-utils sys-libs/libapparmor sec-policy/apparmor-profiles media-sound/pamixer sci-misc/jupyterlab-desktop-bin net-im/zoom app-misc/tealdeer sys-apps/grep kde-misc/krusader app-admin/keepassxc sci-chemistry/pymol media-libs/mesa x11-apps/mesa-progs gui-libs/egl-wayland x11-drivers/nvidia-drivers 
+emerge -av --jobs=10  app-arch/unzip app-arch/zip app-arch/unrar sys-fs/btrfs-progs sys-fs/dosfstools net-misc/wget net-misc/curl app-misc/ckb app-admin/sudo app-text/zathura app-text/zathura-meta dev-python/pynvim app-editors/neovim sys-apps/ripgrep dev-util/tree-sitter-cli sys-apps/fd app-shells/zsh app-shells/zsh-completions app-shells/gentoo-zsh-completions app-shells/zoxide app-shells/fzf dev-vcs/lazygit x11-misc/rofi x11-misc/dunst app-forensics/aide sys-apps/rng-tools sys-apps/haveged app-forensics/lynis sys-process/audit app-admin/sysstat sys-process/acct sys-boot/grub sys-apps/mlocate app-misc/tmux x11-themes/papirus-icon-theme app-portage/smart-live-rebuild app-portage/gentoolkit net-im/discord app-text/xournalpp sys-power/power-profiles-daemon app-admin/stow x11-terms/kitty x11-terms/kitty-terminfo x11-terms/kitty-shell-integration app-misc/ranger app-misc/vifm sys-apps/apparmor sys-apps/apparmor-utils sys-libs/libapparmor sec-policy/apparmor-profiles sci-misc/jupyterlab-desktop-bin net-im/zoom app-misc/tealdeer sys-apps/grep app-admin/keepassxc sci-chemistry/pymol x11-drivers/nvidia-drivers 
 
 
 
@@ -236,7 +236,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot && grub-install --target=
 
 nvim /etc/default/grub
 :w
-GRUB_CMDLINE_LINUX="quiet crypt_root=UUID=6d16f447-973d-49e6-b01d-c6938c732d2e root_trim=yes init=/lib/systemd/systemd"
+GRUB_CMDLINE_LINUX="quiet crypt_root=UUID=c5e82cd1-d6cb-4d61-ad87-0c93463edee4 root_trim=yes init=/lib/systemd/systemd"
 GRUB_CMDLINE_LINUX_DEFAULT="apparmor=1 security=apparmor nvidia-drm.modeset=1" 
 
 # Setup systemd
