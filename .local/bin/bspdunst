@@ -1,4 +1,5 @@
 #!/bin/bash
+pkill dunst
 dunst -config ~/.config/dunst/dunstrc &
 
 dunstify -u critical "Critical message" "critical message"

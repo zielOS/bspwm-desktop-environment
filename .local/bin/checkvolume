@@ -4,7 +4,7 @@ value="$(eww get volume-percent)"
 sleep_duration=3
 
 # open eww volume
-eww -c $HOME/.config/eww/volume open volume
+[[ -z $(eww windows | grep -i '*' | grep volume) ]] && eww open volume
 
 while true; do
   new_value=$(eww get volume-percent)
@@ -21,7 +21,7 @@ while true; do
     newest_value=$(eww get volume-percent)
     if [ "$value" == "$newest_value" ]; then
       # if not changed within the sleep time, then close eww volume
-      eww -c $HOME/.config/eww/volume close volume ; exit
+      [[ -n $(eww windows | grep -i '*' | grep volume) ]] && eww close volume ; exit
 
       # reset sleep
       sleep_duration=3

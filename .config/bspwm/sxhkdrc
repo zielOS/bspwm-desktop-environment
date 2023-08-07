@@ -14,11 +14,11 @@ super + shift + Escape
 
 ### Launch terminal
 super + Return
-  st
+  bspterm
 
 # negative -w arg to account for a border width (default: 100%)
 super + shift + Return
-	bspc rule -a st -o state=floating follow=on center=true rectangle=490x310+0+0 && st
+	bspterm --float
 
 ### Launch menu
 super + d
@@ -32,9 +32,15 @@ super + g; {b, f, e}
 ### H A R D W A R E   K E Y S ###
 #################################
 
-# screenshot
+# Screenshots
 Print
+	flameshot full -p ~/Pictures/screenshots
+
+Print + shift
 	flameshot gui
+
+Print + super
+	flameshot screen -p ~/Pictures/screenshots
 
 # volume control
 XF86Audio{RaiseVolume,LowerVolume,Mute}
@@ -54,12 +60,8 @@ super + alt + {q,r}
 
 # Lockscreen
 ctrl + alt + l
-    betterlockscreen -l
+  betterlockscreen -l
 
-# mouse action for jgmenu
-#button3
-#	bspc query -D -d 'focused.!occupied' \#
-#		&& jgmenu_run
 
 ###################################
 ### M A N A G E   W I N D O W S ###
@@ -143,15 +145,6 @@ super + minus
 # jgmenu
 ~button3
   xqp 0 $(xdo id -N Bspwm -n root) && jgmenu_run
-
-#############################
-### S C R A T C H P A D S ###
-#############################
-
-super + s; {t, shift + t, r, v, l}
-	bspscratchpad { tsp, tsp2, ranger, vifm, lvim }
-
-
 
 
 #################
